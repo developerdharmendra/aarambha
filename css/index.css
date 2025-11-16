@@ -30,6 +30,10 @@ h6,
 li {
   font-family: "Poppins", sans-serif;
 }
+.title-color {
+  color: var(--main-color);
+  margin-top: 10px;
+}
 .btn-warning{
   background-color: var(--main-color);
   color: var(--light-bg-color);
@@ -3773,3 +3777,4 @@ figcaption .project-creator {
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
