@@ -1993,9 +1993,7 @@ background-color:#b2071d !important ;
   font-size: 13px;
 }
 @media screen and (max-width: 767px) {
-  .top__header .link__wrapper {
-    justify-content: start !important;
-  }
+ 
   .top__header .link__wrapper .left__text{
     display: none;
   }
@@ -2453,6 +2451,135 @@ background-color:#b2071d !important ;
   }
 }
 
+/* hero section  */
+ 
+.hero-fixed-wrapper .handwritten-box .button {
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  padding-block: 1rem;
+  padding-inline: 1.5rem;
+  background-color: var(--main-color);
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffff;
+  gap: 10px;
+  font-weight: bold;
+  border: 3px solid #ffffff4d;
+  outline: none;
+  overflow: hidden;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.hero-fixed-wrapper .handwritten-box .icon {
+  width: 24px;
+  height: 24px;
+  transition: all 0.3s ease-in-out;
+}
+
+.hero-fixed-wrapper .handwritten-box .button:hover {
+  transform: scale(1.05);
+  border-color: #fff9;
+}
+
+.hero-fixed-wrapper .handwritten-box .button:hover .icon {
+  transform: translate(4px);
+}
+
+.hero-fixed-wrapper .handwritten-box .button:hover::before {
+  animation: shine 1.5s ease-out infinite;
+}
+
+.hero-fixed-wrapper .handwritten-box .button::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100%;
+  background-image: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 30%,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0) 70%
+  );
+  top: 0;
+  left: -100px;
+  opacity: 0.6;
+}
+
+.hero-fixed-wrapper .handwritten-box1 .button {
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  padding-block: 1rem;
+  padding-inline: 1.5rem;
+  background-color: var(--secondary-color);
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffff;
+  gap: 10px;
+  font-weight: bold;
+  border: 3px solid #ffffff4d;
+  outline: none;
+  overflow: hidden;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.hero-fixed-wrapper .handwritten-box1 .icon {
+  width: 24px;
+  height: 24px;
+  transition: all 0.3s ease-in-out;
+}
+
+.hero-fixed-wrapper .handwritten-box1 .button:hover {
+  transform: scale(1.05);
+  border-color: #fff9;
+}
+
+.hero-fixed-wrapper .handwritten-box1 .button:hover .icon {
+  transform: translate(4px);
+}
+
+.hero-fixed-wrapper .handwritten-box1 .button:hover::before {
+  animation: shine 1.5s ease-out infinite;
+}
+
+.hero-fixed-wrapper .handwritten-box1 .button::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100%;
+  background-image: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 30%,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0) 70%
+  );
+  top: 0;
+  left: -100px;
+  opacity: 0.6;
+}
+
+@keyframes shine {
+  0% {
+    left: -100px;
+  }
+
+  60% {
+    left: 100%;
+  }
+
+  to {
+    left: 100%;
+  }
+}
+
+
 .slider-wrapper .main__slider {
   z-index: 0;
 }
@@ -2604,12 +2731,15 @@ background-color:#b2071d !important ;
 }
 
 .vission__content {
-  padding: 0 10.3rem;
-}
+  padding: 2rem 0rem;
+  text-align: center;
+  }
 .vission__content h1 {
   color: var(--main-color);
   font-size: 22px;
   font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 20px;
   position: relative;
 }
 .vission__content h1::after {
@@ -2632,11 +2762,189 @@ background-color:#b2071d !important ;
   width: 2rem;
   height: 3px;
 }
+
+.who-section .who_image{
+  border-radius: 50%;
+  overflow: hidden;
+  height: 200px;
+  width: 200px;
+  margin: 0 auto 10px auto;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.who_image img {
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+}
+.who_image img {
+  transition: 0.3s all ease-in-out;
+}
+.who_image:hover img {
+  transform: scale(1.1);
+  transition: 0.3s all ease-in-out;
+}
 @media screen and (max-width: 992px) {
   .vission__content {
-    padding: 0;
+    padding: 1.5rem 0rem;
   }
 }
+
+/* what we do  */
+
+.what-do .img__holder {
+  width: auto;
+  height: auto;
+  background-color: #000000;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+.what-do .img__holder img {
+  object-fit: cover;
+  transition: 0.3s all ease-in-out;
+}
+.what-do .img__holder:hover img {
+  transform: translate(7%, -7%);
+}
+
+/* where er work  */
+
+
+      .maps-of-nepal .cover-title {
+        font-size: 3.5rem;
+        font-weight: bold;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+      }
+      .maps-of-nepal .cover-subtitle {
+        font-size: 1.3rem;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+      }
+
+
+      /* Title */
+     .maps-of-nepal .title {
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+      }
+     .maps-of-nepal .title span {
+        color: #a0a0a0;
+        display: inline-block;
+      }
+      .maps-of-nepal .letter {
+        display: inline-block;
+        opacity: 0;
+        transform: translateX(-10px);
+        animation: fadeInLeft 0.5s forwards;
+      }
+      @keyframes fadeInLeft {
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+
+      /* Subtitle */
+      .maps-of-nepal .subtitle {
+        font-size: 1.1rem;
+        color: #666;
+        max-width: 600px;
+        margin: 0 auto 3rem;
+        line-height: 1.6;
+      }
+
+      /* Map Container */
+      .maps-of-nepal .map-container {
+        width: 100%;
+        max-width: 1000px;
+        margin: 0 auto;
+        position: relative;
+        overflow: visible;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 12px;
+        min-height: 600px;
+        opacity: 0.9;
+      }
+      .maps-of-nepal svg {
+        width: 100%;
+        height: 100%;
+        min-height: 600px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        pointer-events: none;
+      }
+
+      /* Connection Dots */
+      .maps-of-nepal .dot {
+        fill: var(--main-color);
+        stroke: var(--secondary-color);
+        stroke-width: 2;
+        r: 6;
+        filter: drop-shadow(0 0 8px rgba(219, 16, 16, 0.6));
+        cursor: pointer;
+        pointer-events: all;
+        transition: r 0.2s;
+      }
+      .maps-of-nepal .dot:hover {
+        r: 10;
+      }
+      .dot.pulse {
+        animation: pulse 2s infinite;
+      }
+      @keyframes pulse {
+        0% {
+          r: 6;
+          opacity: 1;
+        }
+        70% {
+          r: 12;
+          opacity: 0.6;
+        }
+        100% {
+          r: 6;
+          opacity: 1;
+        }
+      }
+
+      /* Curved Connection Lines */
+      .maps-of-nepal .connection {
+        stroke: var(--main-color);
+        stroke-width: 3;
+        fill: none;
+        stroke-dasharray: 1000;
+        stroke-dashoffset: 1000;
+        animation: draw 3s forwards ease-in-out;
+        filter: drop-shadow(0 0 6px rgba(221, 15, 15, 0.585));
+      }
+      @keyframes draw {
+        to {
+          stroke-dashoffset: 0;
+        }
+      }
+
+      /* Responsive */
+      @media (max-width: 768px) {
+        .cover-title {
+          font-size: 2.5rem;
+        }
+        .cover-subtitle {
+          font-size: 1.1rem;
+        }
+        .title {
+          font-size: 2rem;
+        }
+        .subtitle {
+          font-size: 1rem;
+        }
+        
+        .maps-of-nepal .map-container {
+          min-height: 250px;
+        }
+        .maps-of-nepal svg {
+          min-height: 250px;
+        }
+      }
 
 .area__impact-section .small__title {
   margin-bottom: 2rem;
