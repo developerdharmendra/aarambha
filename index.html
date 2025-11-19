@@ -53,6 +53,14 @@
                 />
               </a>
             </div>
+            <div class="d-md-none">
+              <a href="" class="btn btn-join py-2 px-3">
+                <span
+                  ><i class="fa-solid fa-circle-dollar-to-slot pe-1"></i
+                ></span>
+                <span>Donate</span>
+              </a>
+            </div>
             <div class="sitenavigation">
               <span class="menu-icon">
                 <a href="#" class="menu example5"><span></span></a>
@@ -85,7 +93,7 @@
                   <div class="btns_wrapper d-flex align-items-center">
                     <a
                       href=""
-                      class="btn btn-join py-2 px-3 d-flex justify-content-center align-items-center"
+                      class="btn btn-join py-2 px-3 d-flex justify-content-center align-items-center d-none d-md-block"
                     >
                       <span
                         ><i class="fa-solid fa-circle-dollar-to-slot pe-1"></i
@@ -104,107 +112,37 @@
     <main>
       <font color="#333333" face="tahoma, geneva, sans-serif">
         <!-- START FIXED HERO SECTION -->
-        <section class="hero-fixed-wrapper" style="margin-top: 75px">
-          <div
-            class="hero-fixed"
-            style="
-              background-image: url('images/cover.jpg');
-              background-position: center;
-              background-size: cover;
-              background-repeat: no-repeat;
-              position: relative;
-              min-height: 100vh;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              text-align: center;
-            "
-          >
-            <!-- Overlay (darkens the image a little) -->
-            <div
-              style="
-                position: absolute;
-                inset: 0;
-                background: rgba(0, 0, 0, 0.786);
-              "
-            ></div>
-
-            <!-- Hand-written style boxes -->
-            <div class="container position-relative" style="z-index: 2">
-              <div class="row">
-                <div
-                  class="col-md-10 col-12 wow fadeInLeft"
-                  data-wow-delay="0.1s"
-                  style="
-                    visibility: visible;
-                    -webkit-animation-delay: 0.3s;
-                    -moz-animation-delay: 0.3s;
-                    animation-delay: 0.3s;
-                  "
-                >
-                  <div class="text-start">
-                    <h1
-                    >
-                      Out of 100 Students, 30 Students Dropout before completing
-                      Grade 10
-                    </h1>
-                  </div>
-                </div>
-                <!-- BOTTOM ROW -->
-              <div class="row justify-content-start mt-md-5">
-                <!-- Report a School Dropout -->
-                <div
-                  class="col-md-3 col-12 mb-md-3 wow fadeInLeft"
-                  data-wow-delay="0.3s"
-                  style="
-                    visibility: visible;
-                    -webkit-animation-delay: 0.3s;
-                    -moz-animation-delay: 0.3s;
-                    animation-delay: 0.3s;
-                  "
-                >
-                  <div class="handwritten-box p-3 text-center">
-                    <a href="" class="button">
-                      Report a School Dropout
-                      <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
-                        <path
-                          fill-rule="evenodd"
-                          d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
-                          clip-rule="evenodd"
-                        ></path>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-
-                <!-- Donate -->
-                <div
-                  class="col-md-3 col-12 mb-md-3 wow fadeInLeft"
-                  data-wow-delay="0.5s"
-                  style="
-                    visibility: visible;
-                    -webkit-animation-delay: 0.3s;
-                    -moz-animation-delay: 0.3s;
-                    animation-delay: 0.3s;
-                  "
-                >
-                  <div class="handwritten-box1 p-3 text-center">
-                    <a href="" class="button">
-                      Donate
-                      <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
-                        <path
-                          fill-rule="evenodd"
-                          d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
-                          clip-rule="evenodd"
-                        ></path>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
+        <section class="hero-fixed-wrapper">
+          <div class="img-box">
+            <img src="./images/cover.jpg" class="img-fluid" alt="" />
+          </div>
+          <div class="hero-fixed">
+            <div class="btn-box">
+              <div class="handwritten-box text-center">
+                <a href="" class="button">
+                  Report a School Dropout
+                  <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      fill-rule="evenodd"
+                      d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </a>
               </div>
 
-              
+              <div class="handwritten-box1 text-center">
+                <a href="" class="button">
+                  Donate
+                  <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      fill-rule="evenodd"
+                      d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
             </div>
           </div>
         </section>
@@ -229,8 +167,7 @@
 
               <div class="row align-items-center">
                 <div
-                  class="col-md-4 wow fadeInLeft"
-                  data-wow-delay="0.3s"
+                  class="col-md-12 wow fadeInLeft"
                   style="
                     visibility: visible;
                     -webkit-animation-delay: 0.3s;
@@ -238,52 +175,11 @@
                     animation-delay: 0.3s;
                   "
                 >
-                  <div class="who_image">
-                    <img src="images/youth.png" alt="" class="" />
-                  </div>
-                  <!-- <p>Youth Driven Organization</p> -->
+                  <img src="images/we.png" class="img-fluid" alt="" />
                 </div>
-
-                <div
-                  class="col-md-4 wow fadeInLeft"
-                  data-wow-delay="0.4s"
-                  style="
-                    visibility: visible;
-                    -webkit-animation-delay: 0.3s;
-                    -moz-animation-delay: 0.3s;
-                    animation-delay: 0.3s;
-                  "
-                >
-                  <div class="who_image">
-                    <img
-                      src="images/volenteer.png"
-                      alt=""
-                      class=""
-                    />
-                  </div>
-                  <!-- <p>Volunteer</p> -->
-                </div>
-
-                <div
-                  class="col-md-3 wow fadeInLeft"
-                  data-wow-delay="0.5s"
-                  style="
-                    visibility: visible;
-                    -webkit-animation-delay: 0.3s;
-                    -moz-animation-delay: 0.3s;
-                    animation-delay: 0.3s;
-                  "
-                >
-                  <div class="who_image">
-                    <img src="images/maker.png" alt="" class="" />
-                  </div>
-                  <!-- <p>Change Maker</p> -->
-                </div>
-
-               
+              </div>
             </div>
           </div>
-
         </section>
         <!-- END Who we are SECTION -->
 
@@ -385,171 +281,9 @@
           >
             <div
               class="map-container"
-              style="
-                background: url('./images/Nepal_zones.svg.png');
-                background-size: cover;
-                background-position: center;
-              "
             >
-              <svg
-                viewBox="0 0 1000 600"
-                xmlns="http://www.w3.org/2000/svg"
-                preserveAspectRatio="xMidYMid meet"
-              >
-                <!-- Connection 1: Kathmandu → Pokhara -->
-                <path class="connection" d="M540,260 Q480,270 420,280" />
-                <!-- Connection 2: Kathmandu → Biratnagar -->
-                <path
-                  class="connection"
-                  d="M540,260 Q660,300 780,340"
-                  style="animation-delay: 0.5s"
-                />
-                <!-- Connection 3: Pokhara → Lumbini -->
-                <path
-                  class="connection"
-                  d="M420,280 Q400,350 380,420"
-                  style="animation-delay: 1s"
-                />
-                <!-- Connection 4: Kathmandu → Janakpur -->
-                <path
-                  class="connection"
-                  d="M540,260 Q580,320 620,380"
-                  style="animation-delay: 1.5s"
-                />
-                <!-- Connection 5: Bharatpur → Lumbini -->
-                <path
-                  class="connection"
-                  d="M480,320 Q430,370 380,420"
-                  style="animation-delay: 2s"
-                />
-                <!-- Connection 6: Biratnagar → Janakpur -->
-                <path
-                  class="connection"
-                  d="M780,340 Q700,360 620,380"
-                  style="animation-delay: 2.5s"
-                />
-
-                <!-- City Dots -->
-                <circle
-                  class="dot pulse"
-                  cx="540"
-                  cy="260"
-                  r="6"
-                  data-city="Kathmandu (Bagmati Zone)"
-                  data-lat="27.7172"
-                  data-lng="85.3240"
-                  title="Kathmandu"
-                />
-                <text
-                  x="550"
-                  y="265"
-                  fill="#1e40af"
-                  font-size="14"
-                  font-weight="bold"
-                >
-                  Kathmandu
-                </text>
-
-                <circle
-                  class="dot pulse"
-                  cx="420"
-                  cy="280"
-                  r="6"
-                  data-city="Pokhara (Gandaki Zone)"
-                  data-lat="28.2096"
-                  data-lng="83.9856"
-                  title="Pokhara"
-                />
-                <text
-                  x="430"
-                  y="285"
-                  fill="#1e40af"
-                  font-size="14"
-                  font-weight="bold"
-                >
-                  Pokhara
-                </text>
-
-                <circle
-                  class="dot pulse"
-                  cx="780"
-                  cy="340"
-                  r="6"
-                  data-city="Biratnagar (Koshi Zone)"
-                  data-lat="26.4525"
-                  data-lng="87.2718"
-                  title="Biratnagar"
-                />
-                <text
-                  x="790"
-                  y="345"
-                  fill="#1e40af"
-                  font-size="14"
-                  font-weight="bold"
-                >
-                  Biratnagar
-                </text>
-
-                <circle
-                  class="dot pulse"
-                  cx="380"
-                  cy="420"
-                  r="6"
-                  data-city="Lumbini (Lumbini Zone)"
-                  data-lat="27.4812"
-                  data-lng="83.2760"
-                  title="Lumbini"
-                />
-                <text
-                  x="390"
-                  y="425"
-                  fill="#1e40af"
-                  font-size="14"
-                  font-weight="bold"
-                >
-                  Lumbini
-                </text>
-
-                <circle
-                  class="dot pulse"
-                  cx="620"
-                  cy="380"
-                  r="6"
-                  data-city="Janakpur (Janakpur Zone)"
-                  data-lat="26.7280"
-                  data-lng="85.9240"
-                  title="Janakpur"
-                />
-                <text
-                  x="630"
-                  y="385"
-                  fill="#1e40af"
-                  font-size="14"
-                  font-weight="bold"
-                >
-                  Janakpur
-                </text>
-
-                <circle
-                  class="dot pulse"
-                  cx="480"
-                  cy="320"
-                  r="6"
-                  data-city="Bharatpur (Narayani Zone)"
-                  data-lat="27.6768"
-                  data-lng="84.4312"
-                  title="Bharatpur"
-                />
-                <text
-                  x="490"
-                  y="325"
-                  fill="#1e40af"
-                  font-size="14"
-                  font-weight="bold"
-                >
-                  Bharatpur
-                </text>
-              </svg>
+            <img src="images/nepa.png" class="img-fluid" alt="" >
+             
             </div>
           </div>
         </section>
@@ -557,7 +291,7 @@
 
         <!-- start Events and Areas of Impact SECTION -->
 
-        <section class="our-impact py-2 mt-5" style="background-color: #ededed">
+        <section class="our-impact py-2 " style="background-color: #ededed">
           <div class="vission__content">
             <div class="d-flex justify-content-center">
               <h1
@@ -1695,7 +1429,8 @@
             <div class="d-flex justify-content-center align-items-center">
               <div class="right__wrapper" style="text-align: center">
                 <span style="color: white; text-align: center">
-                  &copy; <script>
+                  &copy;
+                  <script>
                     document.write(new Date().getFullYear());
                   </script>
                   Aarambha Foundation. All Rights Reserved.
