@@ -1,439 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nepal Zones Connectivity</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youth Driven Organization Logo</title>
     <style>
-      
-     
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #f0f0f0;
+            font-family: 'Arial', sans-serif;
+        }
 
-  
-      .cover-title {
-        font-size: 3.5rem;
-        font-weight: bold;
-        margin-bottom: 1rem;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-      }
-      .cover-subtitle {
-        font-size: 1.3rem;
-        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
-      }
+        .logo-container {
+            width: 320px;
+            height: 320px;
+            position: relative;
+        }
 
+        .logo-bg {
+            width: 100%;
+            height: 70%;
+            background: #FF5722; /* Exact orange color */
+            border-radius: 15px;
+            position: absolute;
+            bottom: 0;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
 
-      /* Title */
-      .title {
-        font-size: 2.5rem;
-        font-weight: bold;
-        margin-bottom: 1rem;
-      }
-      .title span {
-        color: #a0a0a0;
-        display: inline-block;
-      }
-      .letter {
-        display: inline-block;
-        opacity: 0;
-        transform: translateX(-10px);
-        animation: fadeInLeft 0.5s forwards;
-      }
-      @keyframes fadeInLeft {
-        to {
-          opacity: 1;
-          transform: translateX(0);
+        .circle {
+            width: 120px;
+            height: 120px;
+            background: #FF5722;
+            border: 12px solid white;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            z-index: 9;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
-      }
 
-      /* Subtitle */
-      .subtitle {
-        font-size: 1.1rem;
-        color: #666;
-        max-width: 600px;
-        margin: 0 auto 3rem;
-        line-height: 1.6;
-      }
+        .people-icon {
+            color: white;
+            font-size: 56px;
+            font-weight: bold;
+            position: relative;
+        }
 
-      /* Map Container */
-      .map-container {
-        width: 100%;
-        max-width: 1000px;
-        margin: 0 auto;
-        position: relative;
-        overflow: visible;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        border-radius: 12px;
-        min-height: 600px;
-        opacity: 0.9;
-      }
-      svg {
-        width: 100%;
-        height: 100%;
-        min-height: 600px;
-        position: absolute;
-        top: 0;
-        left: 0;
-        pointer-events: none;
-      }
+        .people-icon::before {
+            content: "";
+            letter-spacing: 8px;
+            position: absolute;
+            top: -40px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
 
-      /* Connection Dots */
-      .dot {
-        fill: #3b82f6;
-        stroke: #1e40af;
-        stroke-width: 2;
-        r: 6;
-        filter: drop-shadow(0 0 8px rgba(59, 130, 246, 0.6));
-        cursor: pointer;
-        pointer-events: all;
-        transition: r 0.2s;
-      }
-      .dot:hover {
-        r: 10;
-      }
-      .dot.pulse {
-        animation: pulse 2s infinite;
-      }
-      @keyframes pulse {
-        0% {
-          r: 6;
-          opacity: 1;
+        .people-icon::after {
+            content: "";
+            font-size: 40px;
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            letter-spacing: 12px;
         }
-        70% {
-          r: 12;
-          opacity: 0.6;
-        }
-        100% {
-          r: 6;
-          opacity: 1;
-        }
-      }
 
-      /* Curved Connection Lines */
-      .connection {
-        stroke: #3b82f6;
-        stroke-width: 2;
-        fill: none;
-        stroke-dasharray: 1000;
-        stroke-dashoffset: 1000;
-        animation: draw 3s forwards ease-in-out;
-        filter: drop-shadow(0 0 6px rgba(59, 130, 246, 0.4));
-      }
-      @keyframes draw {
-        to {
-          stroke-dashoffset: 0;
+        .text {
+            position: absolute;
+            bottom: 70px;
+            left: 0;
+            right: 0;
+            text-align: center;
+            color: white;
+            font-weight: bold;
         }
-      }
 
-      /* Responsive */
-      @media (max-width: 768px) {
-        .cover-title {
-          font-size: 2.5rem;
+        .text h1 {
+            margin: 0;
+            font-size: 36px;
+            line-height: 1.2;
         }
-        .cover-subtitle {
-          font-size: 1.1rem;
+
+        .text .driven {
+            font-size: 42px;
         }
-        .title {
-          font-size: 2rem;
-        }
-        .subtitle {
-          font-size: 1rem;
-        }
-        .container {
-          padding: 60px 15px;
-        }
-        .map-container {
-          min-height: 400px;
-        }
-        svg {
-          min-height: 400px;
-        }
-      }
     </style>
-  </head>
-  <body>
-      <div
-        class="map-container"
-        style="
-          background: url('./images/Nepal_zones.svg.png');
-          background-size: cover;
-          background-position: center;
-        "
-      >
-        <svg
-          viewBox="0 0 1000 600"
-          xmlns="http://www.w3.org/2000/svg"
-          preserveAspectRatio="xMidYMid meet"
-        >
-          <!-- Connection 1: Kathmandu → Pokhara -->
-          <path class="connection" d="M540,260 Q480,270 420,280" />
-          <!-- Connection 2: Kathmandu → Biratnagar -->
-          <path
-            class="connection"
-            d="M540,260 Q660,300 780,340"
-            style="animation-delay: 0.5s"
-          />
-          <!-- Connection 3: Pokhara → Lumbini -->
-          <path
-            class="connection"
-            d="M420,280 Q400,350 380,420"
-            style="animation-delay: 1s"
-          />
-          <!-- Connection 4: Kathmandu → Janakpur -->
-          <path
-            class="connection"
-            d="M540,260 Q580,320 620,380"
-            style="animation-delay: 1.5s"
-          />
-          <!-- Connection 5: Bharatpur → Lumbini -->
-          <path
-            class="connection"
-            d="M480,320 Q430,370 380,420"
-            style="animation-delay: 2s"
-          />
-          <!-- Connection 6: Biratnagar → Janakpur -->
-          <path
-            class="connection"
-            d="M780,340 Q700,360 620,380"
-            style="animation-delay: 2.5s"
-          />
-
-          <!-- City Dots -->
-          <circle
-            class="dot pulse"
-            cx="540"
-            cy="260"
-            r="6"
-            data-city="Kathmandu (Bagmati Zone)"
-            data-lat="27.7172"
-            data-lng="85.3240"
-            title="Kathmandu"
-          />
-          <circle
-            class="dot pulse"
-            cx="420"
-            cy="280"
-            r="6"
-            data-city="Pokhara (Gandaki Zone)"
-            data-lat="28.2096"
-            data-lng="83.9856"
-            title="Pokhara"
-          />
-          <circle
-            class="dot pulse"
-            cx="780"
-            cy="340"
-            r="6"
-            data-city="Biratnagar (Koshi Zone)"
-            data-lat="26.4525"
-            data-lng="87.2718"
-            title="Biratnagar"
-          />
-          <circle
-            class="dot pulse"
-            cx="380"
-            cy="420"
-            r="6"
-            data-city="Lumbini (Lumbini Zone)"
-            data-lat="27.4812"
-            data-lng="83.2760"
-            title="Lumbini"
-          />
-          <circle
-            class="dot pulse"
-            cx="620"
-            cy="380"
-            r="6"
-            data-city="Janakpur (Janakpur Zone)"
-            data-lat="26.7280"
-            data-lng="85.9240"
-            title="Janakpur"
-          />
-          <circle
-            class="dot pulse"
-            cx="480"
-            cy="320"
-            r="6"
-            data-city="Bharatpur (Narayani Zone)"
-            data-lat="27.6768"
-            data-lng="84.4312"
-            title="Bharatpur"
-          />
-        </svg>
-      </div>
+</head>
+<body>
+    <div class="logo-container">
+        <div class="circle">
+           👌
+        </div>
+        <div class="logo-bg">
+        </div>
+        <div class="text">
+            <h1>Youth <span class="driven">Driven</span><br>Organization</h1>
+        </div>
     </div>
-
-    <script>
-      // Animated "Connectivity" text
-      const word = "Connectivity";
-      const container = document.getElementById("connectivity");
-      word.split("").forEach((letter, i) => {
-        const span = document.createElement("span");
-        span.className = "letter";
-        span.textContent = letter === " " ? "\u00A0" : letter;
-        span.style.animationDelay = `${i * 0.04}s`;
-        container.appendChild(span);
-      });
-
-      // Clickable Dots → Open Google Maps
-      document.querySelectorAll(".dot").forEach((dot) => {
-        dot.addEventListener("click", () => {
-          const lat = dot.dataset.lat;
-          const lng = dot.dataset.lng;
-          window.open(`https://www.google.com/maps?q=${lat},${lng}`, "_blank");
-        });
-      });
-    </script>
-  </body>
+</body>
 </html>
-
-
-
-  <!-- <section class="be-member-volunteer py-4">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-6">
-                <div
-                  class="img__holder wow fadeInLeft"
-                  data-wow-delay="0.3s"
-                  style="
-                    visibility: visible;
-                    -webkit-animation-delay: 0.3s;
-                    -moz-animation-delay: 0.3s;
-                    animation-delay: 0.3s;
-                  "
-                >
-                  <img
-                    src="images/First-Aid-II-1024x683.jpg"
-                    width="100%"
-                    height="100%"
-                    alt=""
-                  />
-                </div>
-                <h3 class="title-color">Be a Member</h3>
-                <p>
-                  Join Aarambha Foundation as a member and be part of a
-                  community dedicated to making a positive impact in the lives
-                  of underprivileged children. As a member, you will have the
-                  opportunity to contribute your time, skills, and resources to
-                  support our initiatives and help us achieve our mission.
-                </p>
-
-                <form method="" action="">
-                    <div class="row">
-                      <div class="col-md-6 mb-3">
-                        <input
-                          type="text"
-                          class="form-control"
-                          placeholder="Full Name"
-                          required
-                        />
-                      </div>
-
-                      <div class="col-md-6 mb-3">
-                        <input
-                          type="email"
-                          class="form-control"
-                          placeholder="Email Address"
-                          required
-                        />
-                      </div>
-
-                      <div class="col-md-6 mb-3">
-                        <input
-                          type="text"
-                          class="form-control"
-                          placeholder="Phone Number"
-                          required
-                        />
-                      </div>
-
-                      <div class="col-md-6 mb-3">
-                        <input
-                          type="text"
-                          class="form-control"
-                          placeholder="City"
-                          required
-                        />
-                      </div>
-                    </div>
-
-                    <button type="submit" class="btn w-100 btn-lg btn-danger">
-                      Submit
-                    </button>
-                  </form>
-              </div>
-
-              <div class="col-md-6">
-                <div
-                  class="img__holder wow fadeInLeft"
-                  data-wow-delay="0.3s"
-                  style="
-                    visibility: visible;
-                    -webkit-animation-delay: 0.3s;
-                    -moz-animation-delay: 0.3s;
-                    animation-delay: 0.3s;
-                  "
-                >
-                  <img
-                    src="images/Deusi-2-1024x683.jpg"
-                    width="100%"
-                    height="100%"
-                    alt=""
-                  />
-                </div>
-                <h3 class="title-color">Be a Volunteer</h3>
-                <p>
-                  Volunteer with Aarambha Foundation and make a meaningful
-                  difference in the lives of underprivileged children. As a
-                  volunteer, you will have the opportunity to contribute your
-                  time and skills to support our programs and initiatives.
-                </p>
-
-                <form method="" action="">
-                    <div class="row">
-                      <div class="col-md-6 mb-3">
-                        <input
-                          type="text"
-                          class="form-control"
-                          placeholder="Full Name"
-                          required
-                        />
-                      </div>
-
-                      <div class="col-md-6 mb-3">
-                        <input
-                          type="email"
-                          class="form-control"
-                          placeholder="Email Address"
-                          required
-                        />
-                      </div>
-
-                      <div class="col-md-6 mb-3">
-                        <input
-                          type="text"
-                          class="form-control"
-                          placeholder="Phone Number"
-                          required
-                        />
-                      </div>
-
-                      <div class="col-md-6 mb-3">
-                        <input
-                          type="text"
-                          class="form-control"
-                          placeholder="City"
-                          required
-                        />
-                      </div>
-                    </div>
-
-                    <button type="submit" class="btn w-100 btn-lg btn-danger">
-                      Submit
-                    </button>
-                  </form>
-              </div>
-            </div>
-          </div>
-        </section> -->
