@@ -33,213 +33,686 @@
     <link rel="stylesheet" href="css/animate.min.css" />
     <!-- custom-css  -->
     <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <!-- custom-css end -->
     <link rel="icon" type="image/png" href="images/favicon.png" />
     <title>Aarambha Foundation &#8211; Our Beginning for the Change</title>
-    <script src="js/api_1.js" async="" defer=""></script>
   </head>
   <body>
-    <section class="main__header">
-      <header id="nav-bar" class="fixed-top">
-        <nav class="navbar">
-          <div class="container">
-            <div class="logo">
-              <a href="index.html">
-                <img
-                  src="images/logo.png"
-                  width="100%"
-                  height="100%"
-                  alt="Logo"
-                />
-              </a>
+    <nav class="navigation">
+      <a href="/" aria-label="Home" class="navigation__home-link">
+        <img
+          src="images/logo.png"
+          class="d-md-block d-none"
+          style="width: 14rem"
+          alt=""
+        />
+        <img
+          src="images/favicon.png"
+          class="d-block d-md-none"
+          style="width: 6rem"
+          alt=""
+        />
+      </a>
+      <div class="navigation__links">
+        <ul class="navigation__level-one" id="navigation__level-one">
+          <li class="navigation__level-one-item" tabindex="0">
+            <a
+              href=""
+              class="navigation__level-one-link desktop-only--navigation"
+            >
+              Our Work
+              <svg
+                width="7"
+                height="5"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+                class="arrow--down"
+              >
+                <path
+                  d="M6.364.682 3.682 3.364 1 .682"
+                  stroke="#E36F1E"
+                  stroke-width="1.5"
+                ></path>
+              </svg>
+            </a>
+            <button
+              class="navigation__submenu-open-button mobile-only--navigation"
+              aria-controls="#What_we_do"
+              aria-label="Open What we do menu"
+            >
+              Our Work
+              <svg
+                width="7"
+                height="5"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+                class="arrow--down"
+              >
+                <path
+                  d="M6.364.682 3.682 3.364 1 .682"
+                  stroke="#E36F1E"
+                  stroke-width="1.5"
+                ></path>
+              </svg>
+            </button>
+            <div
+              class="navigation__level-two navigation__submenu"
+              id="What_we_do"
+            >
+              <div class="navigation__level-two-content contained-width">
+                <header class="navigation__level-two-header">
+                  <button
+                    class="navigation__submenu-close-button mobile-only--navigation"
+                    aria-controls="#What_we_do"
+                    aria-label="Close What we do menu"
+                  >
+                    <svg
+                      width="7"
+                      height="5"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true"
+                      class="arrow--down"
+                    >
+                      <path
+                        d="M6.364.682 3.682 3.364 1 .682"
+                        stroke="#E36F1E"
+                        stroke-width="1.5"
+                      ></path>
+                    </svg>
+                    Back
+                  </button>
+                  <h2 class="navigation__level-two-title">
+                    <a href="" class="reverse-underline">Our Work</a>
+                  </h2>
+                </header>
+
+                <ul>
+                  <li class="navigation__level-two-item">
+                    <a href="" class="navigation__level-two-link">test</a>
+                  </li>
+
+                  <li class="navigation__level-two-item">
+                    <a href="" class="navigation__level-two-link">Test</a>
+                  </li>
+                </ul>
+
+                <ul>
+                  <li class="navigation__level-two-item">
+                    <a href="" class="navigation__level-two-link">Test</a>
+                  </li>
+                </ul>
+
+                <ul>
+                  <li class="navigation__level-two-item">
+                    <a href="" class="navigation__level-two-link"
+                      >Where we work</a
+                    >
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="d-md-none">
-              <a href="" class="btn btn-join py-2 px-3">
-                <span
-                  ><i class="fa-solid fa-circle-dollar-to-slot pe-1"></i
-                ></span>
-                <span>Donate</span>
-              </a>
+          </li>
+
+          <li class="navigation__level-one-item" tabindex="0">
+            <a
+              href="/get-involved/"
+              class="navigation__level-one-link desktop-only--navigation"
+            >
+              Get involved
+              <svg
+                width="7"
+                height="5"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+                class="arrow--down"
+              >
+                <path
+                  d="M6.364.682 3.682 3.364 1 .682"
+                  stroke="#E36F1E"
+                  stroke-width="1.5"
+                ></path>
+              </svg>
+            </a>
+            <button
+              class="navigation__submenu-open-button mobile-only--navigation"
+              aria-controls="#Get_involved"
+              aria-label="Open Get involved menu"
+            >
+              Get involved
+              <svg
+                width="7"
+                height="5"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+                class="arrow--down"
+              >
+                <path
+                  d="M6.364.682 3.682 3.364 1 .682"
+                  stroke="#E36F1E"
+                  stroke-width="1.5"
+                ></path>
+              </svg>
+            </button>
+            <div
+              class="navigation__level-two navigation__submenu"
+              id="Get_involved"
+            >
+              <div class="navigation__level-two-content contained-width">
+                <header class="navigation__level-two-header">
+                  <button
+                    class="navigation__submenu-close-button mobile-only--navigation"
+                    aria-controls="#Get_involved"
+                    aria-label="Close Get involved menu"
+                  >
+                    <svg
+                      width="7"
+                      height="5"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true"
+                      class="arrow--down"
+                    >
+                      <path
+                        d="M6.364.682 3.682 3.364 1 .682"
+                        stroke="#E36F1E"
+                        stroke-width="1.5"
+                      ></path>
+                    </svg>
+                    Back
+                  </button>
+                  <h2 class="navigation__level-two-title">
+                    <a href="/get-involved/" class="reverse-underline"
+                      >Get involved</a
+                    >
+                  </h2>
+                </header>
+
+                <ul>
+                  <li class="navigation__level-two-item">
+                    <a
+                      href="/get-involved/take-action/"
+                      class="navigation__level-two-link desktop-only--navigation"
+                    >
+                      Take action
+                    </a>
+                    <button
+                      class="navigation__submenu-open-button mobile-only--navigation"
+                      aria-expanded="false"
+                      aria-label="Open Take action menu"
+                    >
+                      Take action
+                      <svg
+                        width="7"
+                        height="5"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true"
+                        class="arrow--down"
+                      >
+                        <path
+                          d="M6.364.682 3.682 3.364 1 .682"
+                          stroke="#E36F1E"
+                          stroke-width="1.5"
+                        ></path>
+                      </svg>
+                    </button>
+                    <div
+                      class="navigation__level-three navigation__submenu"
+                      id="Take_action"
+                    >
+                      <header class="navigation__level-two-header">
+                        <button
+                          class="navigation__submenu-close-button mobile-only--navigation"
+                          aria-controls="#Take_action"
+                          aria-label="Close Get involved menu"
+                        >
+                          <svg
+                            width="7"
+                            height="5"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            aria-hidden="true"
+                            class="arrow--down"
+                          >
+                            <path
+                              d="M6.364.682 3.682 3.364 1 .682"
+                              stroke="#E36F1E"
+                              stroke-width="1.5"
+                            ></path>
+                          </svg>
+                          Back
+                        </button>
+                      </header>
+                      <ul>
+                        <li class="navigation__level-three-item">
+                          <a
+                            href="https://action.careinternational.org.uk/protect-women-and-girls-funding-cuts?utm_source=website&utm_medium=navigation&utm_campaign=emailMP_aidcuts"
+                            class="navigation__level-three-link"
+                            >Email your MP: Protect women and girls from funding
+                            cuts</a
+                          >
+                        </li>
+
+                        <li class="navigation__level-three-item">
+                          <a
+                            href="/get-involved/take-action/gaza-humanitarian-crisis-appeal/"
+                            class="navigation__level-three-link"
+                            >Gaza Humanitarian Crisis Appeal</a
+                          >
+                        </li>
+
+                        <li class="navigation__level-three-item">
+                          <a
+                            href="/get-involved/take-action/ukraine-crisis/"
+                            class="navigation__level-three-link"
+                            >Ukraine Humanitarian Appeal</a
+                          >
+                        </li>
+
+                        <li class="navigation__level-three-item">
+                          <a
+                            href="/get-involved/take-action/sudan-emergency-appeal/"
+                            class="navigation__level-three-link"
+                            >Sudan Emergency Appeal</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+
+                <ul>
+                  <li class="navigation__level-two-item">
+                    <a
+                      href="/get-involved/send-a-christmas-care-package-today/"
+                      class="navigation__level-two-link"
+                      >Send a Christmas CARE Package</a
+                    >
+                  </li>
+
+                  <li class="navigation__level-two-item">
+                    <a
+                      href="/get-involved/stand-with-women-today-tote/"
+                      class="navigation__level-two-link"
+                      >Stand with women: Free tote bag</a
+                    >
+                  </li>
+
+                  <li class="navigation__level-two-item">
+                    <a
+                      href="https://lendwithcare.org/?lwc-source=care-website"
+                      class="navigation__level-two-link"
+                      >Change a life with a loan through Lendwithcare</a
+                    >
+                  </li>
+
+                  <li class="navigation__level-two-item">
+                    <a
+                      href="/get-involved/leave-a-gift-in-your-will/"
+                      class="navigation__level-two-link"
+                      >Leave a gift in your Will</a
+                    >
+                  </li>
+                </ul>
+
+                <ul>
+                  <li class="navigation__level-two-item">
+                    <a
+                      href="https://careinternationalstore.com/"
+                      class="navigation__level-two-link"
+                      >Online shop</a
+                    >
+                  </li>
+
+                  <li class="navigation__level-two-item">
+                    <a
+                      href="/get-involved/events/"
+                      class="navigation__level-two-link"
+                      >Fundraising events</a
+                    >
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="sitenavigation">
-              <span class="menu-icon">
-                <a href="#" class="menu example5"><span></span></a>
-                <div id="hamburger">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>
-              </span>
-              <ul>
-                <li class="nav-link bg-hover">
-                  <a href="" class="navbar__links">Our Work</a>
-                </li>
-                <li class="nav-link bg-hover">
-                  <a href="" class="navbar__links">Stories</a>
-                </li>
-                <li class="nav-dropdown bg-hover">
-                  <a href="#" class="navbar__links"
-                    >Get Involved <i class="fa-solid fa-caret-down"></i
-                  ></a>
-                  <ul>
-                    <li>
-                      <a href="member_form.html" class="sub__links"
-                        >Be a Member</a
-                      >
-                    </li>
-                    <li>
-                      <a href="volunteer_form.html" class="sub__links"
-                        >Be a volunteer</a
-                      >
-                    </li>
-                  </ul>
-                </li>
-                <li class="nav-link bg-none mr-lg-2">
-                  <div class="btns_wrapper d-flex align-items-center">
+          </li>
+
+          <li class="navigation__level-one-item" tabindex="0">
+            <a
+              href=""
+              class="navigation__level-one-link desktop-only--navigation"
+            >
+              Stories
+              <svg
+                width="7"
+                height="5"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+                class="arrow--down"
+              >
+                <path
+                  d="M6.364.682 3.682 3.364 1 .682"
+                  stroke="#E36F1E"
+                  stroke-width="1.5"
+                ></path>
+              </svg>
+            </a>
+            <button
+              class="navigation__submenu-open-button mobile-only--navigation"
+              aria-controls="#News_+_Stories"
+              aria-label="Open News + Stories menu"
+            >
+              Stories
+              <svg
+                width="7"
+                height="5"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+                class="arrow--down"
+              >
+                <path
+                  d="M6.364.682 3.682 3.364 1 .682"
+                  stroke="#E36F1E"
+                  stroke-width="1.5"
+                ></path>
+              </svg>
+            </button>
+            <div
+              class="navigation__level-two navigation__submenu"
+              id="News_+_Stories"
+            >
+              <div
+                class="contained-width navigation__level-two-content navigation__level-two-content--with-highlight"
+              >
+                <header class="navigation__level-two-header">
+                  <button
+                    class="navigation__submenu-close-button mobile-only--navigation"
+                    aria-controls="#News_+_Stories"
+                    aria-label="Close News + Stories menu"
+                  >
+                    <svg
+                      width="7"
+                      height="5"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true"
+                      class="arrow--down"
+                    >
+                      <path
+                        d="M6.364.682 3.682 3.364 1 .682"
+                        stroke="#E36F1E"
+                        stroke-width="1.5"
+                      ></path>
+                    </svg>
+                    Back
+                  </button>
+                  <h2 class="navigation__level-two-title">
+                    <a href="" class="reverse-underline">Stories</a>
+                  </h2>
+                </header>
+
+                <ul>
+                  <li>
                     <a
                       href=""
-                      class="btn btn-join py-2 px-3 d-flex justify-content-center align-items-center d-none d-md-block"
+                      class="navigation__level-two-link reverse-underline"
+                      >Latest news + stories</a
                     >
-                      <span
-                        ><i class="fa-solid fa-circle-dollar-to-slot pe-1"></i
-                      ></span>
-                      <span>Donate</span>
-                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href=""
+                      class="navigation__level-two-link reverse-underline"
+                      >Press office</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      href=""
+                      class="navigation__level-two-link reverse-underline"
+                      >Latest press releases</a
+                    >
+                  </li>
+                </ul>
+
+                <div class="navigation__panel">
+                  <!-- This is the highlight panel -->
+                  <img
+                    class="navigation-panel__image"
+                    src="images/favicon.png"
+                    alt="Health clinic, Deir Al-Balah, Gaza"
+                  />
+                  <div>
+                    <h3 class="navigation__panel-title">
+                      Gaza Humanitarian Crisis
+                    </h3>
+                    <p class="navigation__panel-description">
+                      Find out how we are providing life-saving support in Gaza
+                      to families in crisis, with your support.
+                    </p>
+                    <a href="" class="navigation__panel-link">Find out more</a>
                   </div>
-                </li>
-              </ul>
+                </div>
+              </div>
             </div>
+          </li>
+
+          <li
+            class="navigation__level-one-item navigation__search"
+            tabindex="0"
+          >
+            <a href="" class="navigation__level-one-link"> Login </a>
+          </li>
+        </ul>
+
+        <a
+          href="https://careinternational.donorsupport.co/-/XXNEZUWP"
+          class="btn navigation__donate"
+          >Donate</a
+        >
+        <button
+          class="navigation__toggle mobile-only--navigation"
+          aria-expanded="false"
+          aria-label="Open navigation menu"
+          aria-controls="#navigation__level-one"
+        >
+          <svg
+            width="22"
+            height="20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+          >
+            <path
+              d="M0 1h22M0 9.556h22M0 18.111h22"
+              stroke="#000"
+              stroke-width="2"
+            ></path>
+          </svg>
+        </button>
+      </div>
+    </nav>
+    <!-- START FIXED HERO SECTION -->
+    <section class="hero-fixed-wrapper">
+      <div class="img-box">
+        <!-- <img src="./images/cover.jpg" class="img-fluid" alt="" /> -->
+        <video
+          src="images/cover.mp4"
+          autoplay
+          loop
+          muted
+          playsinline
+          controlslist="nodownload noremoteplayback noplaybackrate"
+          disablepictureinpicture
+        ></video>
+      </div>
+      <div class="hero-fixed">
+        <div class="btn-box">
+          <div class="handwritten-box text-center">
+            <a href="" class="button">
+              Report a School Dropout
+              <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  fill-rule="evenodd"
+                  d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </a>
           </div>
-        </nav>
-      </header>
+          <div class="handwritten-box1 text-center">
+            <a href="" class="button">
+              Donate
+              <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  fill-rule="evenodd"
+                  d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
-    <main>
-      <!-- START FIXED HERO SECTION -->
-      <section class="hero-fixed-wrapper">
-        <div class="img-box">
-          <img src="./images/cover.jpg" class="img-fluid" alt="" />
-        </div>
-        <div class="hero-fixed">
-          <div class="btn-box">
-            <div class="handwritten-box text-center">
-              <a href="" class="button">
-                Report a School Dropout
-                <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
-                  <path
-                    fill-rule="evenodd"
-                    d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
-              </a>
+    <!-- END FIXED HERO SECTION -->
+    <!--start Need your support -->
+    <section class="card-group card-group--blue-dark mt-3 mt-md-0">
+      <div class="container">
+        <ul class="grid--3-col card-group__items">
+          <li class="card card--standard card--full-link">
+            <div>
+              <img
+                src="images/Computer-Lab-1024x683.jpg"
+                alt=""
+                loading="lazy"
+                fetchpriority="auto"
+                decoding="async"
+                class=""
+              />
+              <div class="card__text">
+                <div>
+                  <h3 class="card__title">
+                    <span>Aarambha: A New Beginning</span>
+                  </h3>
+                  <div class="card__blurb">
+                    <p>
+                      A movement dedicated to helping motivated children return
+                      to school by providing the resources, support, and
+                      educational spaces they deserve, ensuring no child is left
+                      behind in their learning journey.
+                    </p>
+                    <div>
+                      <a href="" class="btn btn--orange-white">Donate</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="handwritten-box1 text-center">
-              <a href="" class="button">
-                Donate
-                <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
-                  <path
-                    fill-rule="evenodd"
-                    d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
-              </a>
+          </li>
+
+          <li class="card card--standard card--full-link">
+            <div>
+              <img
+                src="images/plantation-1024x683.jpg"
+                alt=""
+                loading="lazy"
+                fetchpriority="auto"
+                decoding="async"
+                class=""
+              />
+              <div class="card__text">
+                <div>
+                  <h3 class="card__title">
+                    <span>Bridging Gaps, Building Futures</span>
+                  </h3>
+                  <div class="card__blurb">
+                    <p>
+                      Through libraries, digital classrooms, fellowships, and
+                      community support, we work to strengthen public schools
+                      and empower students with opportunities that inspire
+                      confidence, curiosity, and lifelong learning.
+                    </p>
+                    <div>
+                      <a href="" class="btn btn--orange-white">Donate</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="card card--standard card--full-link">
+            <div>
+              <img
+                src="images/Computer-Lab-1024x683.jpg"
+                alt=""
+                loading="lazy"
+                fetchpriority="auto"
+                decoding="async"
+                class=""
+              />
+              <div class="card__text">
+                <div>
+                  <h3 class="card__title">
+                    <span>One Step at a Time</span>
+                  </h3>
+                  <div class="card__blurb">
+                    <p>
+                      Committed to transforming education by understanding
+                      student challenges, engaging communities, and creating
+                      sustainable solutions that help every child access quality
+                      learning and explore their fullest potential.
+                    </p>
+                    <div>
+                      <a href="" class="btn btn--orange-white">Donate</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!--end Need your support -->
+    <!-- START Who we are SECTION -->
+    <section class="who-section py-1">
+      <div class="container">
+        <div class="vission__content">
+          <div class="d-flex justify-content-center">
+            <h1>WHO ARE WE</h1>
+          </div>
+          <div class="row align-items-center">
+            <div class="col-md-12">
+              <img src="images/we.png" alt="" srcset="" />
             </div>
           </div>
         </div>
-      </section>
-      <!-- END FIXED HERO SECTION -->
-      <!-- START Who we are SECTION -->
-      <section class="who-section py-1">
-        <div class="container">
-          <div class="vission__content">
-            <div class="d-flex justify-content-center">
-              <h1>We Are</h1>
-            </div>
-            <div class="row align-items-center">
-              <div class="col-md-4">
-                <div class="logo-container">
-                  <div class="circle">
-                    <img src="images/youth.png" width="100" alt="" srcset="" />
-                  </div>
-                  <div class="logo-bg"></div>
-                  <div class="text">
-                    <h4>
-                      Youth <span class="driven">Driven</span><br />Organization
-                    </h4>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-4">
-                <div class="logo-container">
-                  <div class="circle" style="background-color: #023059">
-                    <img
-                      src="images/volenteer.png"
-                      width="100"
-                      alt=""
-                      srcset=""
-                    />
-                  </div>
-                  <div class="logo-bg" style="background-color: #023059"></div>
-                  <div class="text" style="bottom: 85px">
-                    <h4>Volunteer</h4>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-4">
-                <div class="logo-container">
-                  <div class="circle" style="background-color: #933d41">
-                    <img src="images/maker.png" width="100" alt="" srcset="" />
-                  </div>
-                  <div class="logo-bg" style="background-color: #933d41"></div>
-                  <div class="text" style="bottom: 85px">
-                    <h4>Change Makers</h4>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-12 pt-4">
-                <div class="p-4">
-                  <p class="text-center text-md-start">
-                    We are a non profit, non governmental organization
-                    established and registered under organization registration
-                    act 2034 at District administration office, Kathmandu and
-                    affiliated to Social Welfare Council. 
-                    
-                  </p>
-                  <p class="text-center text-md-start">The organization is steered by group of dynamic youths who are at helm of every
-                    decision making level who contribute to the organization
-                    strictly on a  voluntary basis.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- END Who we are SECTION -->
-      <!-- Start what we do SECTION -->
-      <section class="what-do">
-        <div class="container">
-          <div class="row g-0">
-            <!-- Image Column -->
-            <div class="col-md-5 p-0">
-              <div class="img__holder">
-                <img
-                  src="images/mission.png"
-                  class="img-fluid w-100 h-100"
-                  alt=""
-                />
-              </div>
-            </div>
-
-            <!-- Text Column -->
-            <div
-              class="col-md-7 bg-orange d-flex justify-content-center align-items-center p-4 p-md-5"
-            >
-              <div class="mission__box">
-                <h4>Our Mission</h4>
-                <p>
+      </div>
+    </section>
+    <!-- END Who we are SECTION -->
+    <!-- Start what we do SECTION -->
+    <section class="split-banner">
+      <div class="full-width">
+        <div
+          class="split-banner__content split-banner__content--image-on-left theme--blue-dark"
+        >
+          <div class="split-banner__text">
+            <h2 class="split-banner__title">Our Mission</h2>
+            <div class="max-text-width">
+              <div class="rich-text">
+                <p data-block-key="t7swq">
                   We work to bring the light of education, promote better
                   health, and nurture a safe and supportive environment across
                   the nation, where the laughter, voices, and aspirations of
@@ -248,19 +721,32 @@
               </div>
             </div>
           </div>
+          <div
+            class="split-banner__image"
+            aria-labelledby="split-banner__caption"
+          >
+            <img
+              src="images/mission.png"
+              alt="A woman looking very distressed in front of a building damaged by bombing"
+              loading="lazy"
+              fetchpriority="auto"
+              decoding="async"
+              class=""
+            />
+          </div>
         </div>
-      </section>
-
-      <section class="what-do mt-3">
-        <div class="container">
-          <div class="row g-0">
-            <!-- Text Column -->
-            <div
-              class="col-md-7 bg-blue d-flex justify-content-center align-items-center p-4 p-md-5"
-            >
-              <div class="mission__box">
-                <h4>Our Vision</h4>
-                <p>
+      </div>
+    </section>
+    <section class="split-banner">
+      <div class="full-width">
+        <div
+          class="split-banner__content split-banner__content--image-on-right theme--orange"
+        >
+          <div class="split-banner__text">
+            <h2 class="split-banner__title">Our Vision</h2>
+            <div class="max-text-width">
+              <div class="rich-text">
+                <p data-block-key="skikh">
                   We envision a nation where every child has equal access to
                   quality education and healthcare, grows up in a safe and
                   nurturing social environment, and is free to laugh, learn, and
@@ -268,528 +754,340 @@
                 </p>
               </div>
             </div>
-
-            <!-- Image Column -->
-            <div class="col-md-5">
-              <div class="img__holder">
-                <img
-                  src="images/freetution.jpg"
-                  class="img-fluid w-100 h-100"
-                  alt=""
-                />
-              </div>
-            </div>
+          </div>
+          <div
+            class="split-banner__image"
+            aria-labelledby="split-banner__caption"
+          >
+            <img
+              src="images/freetution.jpg"
+              alt="A woman carries a small boy and a bright yellow water container"
+              loading="lazy"
+              fetchpriority="auto"
+              decoding="async"
+              class=""
+            />
           </div>
         </div>
-      </section>
-
-      <!-- END what we do SECTION -->
-      <!-- Start where we work SECTION -->
-      <section class="where-we-work py-2">
-        <div class="vission__content">
-          <div class="d-flex justify-content-center">
-            <h1>Growing Our Impact</h1>
-          </div>
+      </div>
+    </section>
+    <!-- END what we do SECTION -->
+    <!-- Start where we work SECTION -->
+    <section class="where-we-work">
+      <div class="vission__content">
+        <div class="d-flex justify-content-center">
+          <h1>Growing Our Impact</h1>
         </div>
-        <div class="maps-of-nepal">
-          <div class="map-container">
-            <img src="images/nepa.png" class="img-fluid" alt="" />
-          </div>
+      </div>
+      <div class="maps-of-nepal">
+        <div class="map-container">
+          <img src="images/nepa.png" class="img-fluid" alt="" />
         </div>
-      </section>
-      <!-- End where we work SECTION -->
+      </div>
+    </section>
+    <!-- End where we work SECTION -->
 
-      <section class="stats-block">
-        <div class="contained-width">
-          <div class="stats-block__content py-4">
-            <h2 class="stats-block__title h1 mb-2">
-              AARAMBHA's impact in 2020-25
-            </h2>
-            <ul class="stats-block__items d-flex flex-column flex-md-row justify-content-around flex-grow-1">
-              <li class="stats-block__item">
-                <h3 class="stats-block__stat">
-                  <span class="stats-block__stat-content">
-                    <span class="stats-block__stat-value">200</span>
-                    +
-                  </span>
-                </h3>
-                <p class="stats-block__description">Children Educated</p>
-              </li>
+    <section class="stats-block">
+      <div class="contained-width">
+        <div class="stats-block__content py-4">
+          <h2 class="stats-block__title h1 mb-2">AARAMBHA's impact</h2>
+          <ul
+            class="stats-block__items d-flex flex-column flex-md-row justify-content-around flex-grow-1"
+          >
+            <li class="stats-block__item">
+              <h3 class="stats-block__stat">
+                <span class="stats-block__stat-content">
+                  <span class="stats-block__stat-value">200</span>
+                  +
+                </span>
+              </h3>
+              <p class="stats-block__description">Children Educated</p>
+            </li>
 
-              <li class="stats-block__item">
-                <h3 class="stats-block__stat1">
-                  <span class="stats-block__stat-content">
-                    <span class="stats-block__stat-value">800 +</span>
-                  </span>
-                </h3>
-                <p class="stats-block__description">projects</p>
-              </li>
+            <li class="stats-block__item">
+              <h3 class="stats-block__stat1">
+                <span class="stats-block__stat-content">
+                  <span class="stats-block__stat-value">800 +</span>
+                </span>
+              </h3>
+              <p class="stats-block__description">projects</p>
+            </li>
 
-              <li class="stats-block__item">
-                <h3 class="stats-block__stat2">
-                  <span class="stats-block__stat-content">
-                    <span class="stats-block__stat-value">121</span>
-                  </span>
-                </h3>
-                <p class="stats-block__description">countries</p>
-              </li>
-
-            </ul>
-          </div>
+            <li class="stats-block__item">
+              <h3 class="stats-block__stat2">
+                <span class="stats-block__stat-content">
+                  <span class="stats-block__stat-value">121</span>
+                </span>
+              </h3>
+              <p class="stats-block__description">countries</p>
+            </li>
+          </ul>
         </div>
-      </section>
-      <!-- start be a member section  -->
-      <section class="be-member py-4">
-        <div class="container">
-          <div class="row g-0">
-            <!-- Text Column -->
-            <!-- Image Column -->
-            <div class="col-md-5">
-              <div class="img__holder">
-                <img
-                  src="images/plantation-1024x683.jpg"
-                  width="100%"
-                  height="100%"
-                  style="border-radius: 10px"
-                  alt=""
-                />
-              </div>
-            </div>
-            <div
-              class="col-md-7 d-flex justify-content-center align-items-center p-4 p-md-5"
-            >
-              <div class="">
-                <h3 class="mt-3 title-color">Be a Member</h3>
-                <p>
+      </div>
+    </section>
+    <!-- start be a member section  -->
+
+    <section class="split-banner">
+      <div class="full-width">
+        <div
+          class="split-banner__content split-banner__content--image-on-left theme--blue-dark"
+        >
+          <div class="split-banner__text">
+            <h2 class="split-banner__title">BE A MEMBER</h2>
+            <div class="max-text-width">
+              <div class="rich-text">
+                <p data-block-key="t7swq">
                   Join Aarambha Foundation as a member and be part of a
                   community dedicated to making a positive impact in the lives
                   of underprivileged children. As a member, you will have the
                   opportunity to contribute your time, skills, and resources to
                   support our initiatives and help us achieve our mission.
                 </p>
-
-                <a
-                  href="member_form.html"
-                  class="btn btn-join"
-                  style="color: white"
-                >
-                  <span>Join Now</span>
-                </a>
               </div>
             </div>
+
+            <a href="member_form.html" class="btn btn--orange-white"
+              >Join Now</a
+            >
+          </div>
+          <div
+            class="split-banner__image"
+            aria-labelledby="split-banner__caption"
+          >
+            <picture>
+              <source
+                srcset="
+                  images/plantation-1024x683.jpg,
+                  images/plantation-1024x683.jpg 2x
+                "
+                media="(min-width: 800px)"
+              />
+              <img
+                src="images/plantation-1024x683.jpg"
+                srcset="
+                  images/plantation-1024x683.jpg,
+                  images/plantation-1024x683.jpg 2x
+                "
+                alt="A woman looking very distressed in front of a building damaged by bombing"
+                loading="lazy"
+                fetchpriority="auto"
+                decoding="async"
+                class=""
+              />
+            </picture>
           </div>
         </div>
-      </section>
-      <!-- end be a member section  -->
-      <!-- start be a member section  -->
-      <section class="be-volunteer py-4" style="background-color: #ededed">
-        <div class="container">
-          <div class="row g-0">
-            <!-- Text Column -->
-            <!-- Image Column -->
-
-            <div class="col-md-5 order-1 order-md-2">
-              <div class="img__holder">
-                <img
-                  src="images/mission.png"
-                  width="100%"
-                  height="100%"
-                  style="border-radius: 10px"
-                  alt=""
-                />
-              </div>
-            </div>
-
-            <div
-              class="col-md-7 d-flex justify-content-center align-items-center p-4 p-md-5 order-2 order-md-1"
-            >
-              <div class="">
-                <h3 class="mt-3 title-color">Be a Volunteer</h3>
-                <p>
+      </div>
+    </section>
+    <!-- end be a member section  -->
+    <!-- start be a member section  -->
+    <section class="split-banner">
+      <div class="full-width">
+        <div
+          class="split-banner__content split-banner__content--image-on-right theme--orange"
+        >
+          <div class="split-banner__text">
+            <h2 class="split-banner__title">BE A VOLUNTEER</h2>
+            <div class="max-text-width">
+              <div class="rich-text">
+                <p data-block-key="skikh">
                   Volunteer with Aarambha Foundation and make a meaningful
                   difference in the lives of underprivileged children. As a
                   volunteer, you will have the opportunity to contribute your
                   time and skills to support our programs and initiatives.
                 </p>
-
-                <a
-                  href="volunteer_form.html"
-                  class="btn btn-join"
-                  style="color: white"
-                >
-                  <span>Join Now</span>
-                </a>
               </div>
             </div>
+
+            <a href="volunteer_form.html" class="btn btn--white-blue"
+              >join now</a
+            >
+          </div>
+          <div
+            class="split-banner__image"
+            aria-labelledby="split-banner__caption"
+          >
+            <picture>
+              <source
+                srcset="images/mission.png, images/mission.png 2x"
+                media="(min-width: 800px)"
+              />
+              <img
+                src="images/mission.png"
+                srcset="images/mission.png, images/mission.png 2x"
+                alt="A woman carries a small boy and a bright yellow water container"
+                loading="lazy"
+                fetchpriority="auto"
+                decoding="async"
+                class=""
+              />
+            </picture>
           </div>
         </div>
-      </section>
-      <!-- end be a volunteer section  -->
-      <!-- START Events and Areas of Impact SECTION -->
-      <section class="area__impact-section py-2">
-        <div class="vission__content">
-          <div class="d-flex justify-content-center">
-            <h1>Events</h1>
-          </div>
+      </div>
+    </section>
+
+    <!-- end be a volunteer section  -->
+    <!-- START Events and Areas of Impact SECTION -->
+    <section class="events">
+      <div class="vission__content">
+        <div class="d-flex justify-content-center">
+          <h1 class="py-0 my-0">Events</h1>
         </div>
+      </div>
+      <div class="card-group card-group--blue-dark">
         <div class="container">
-          <div class="impact-grid">
-            <div class="grid__item mb-3">
-              <a href="" target="_blank">
-                <div class="img__holder mb-2">
-                  <img
-                    src="images/freetution.jpg"
-                    width="100%"
-                    height="100%"
-                    alt=""
-                  />
+          <ul class="grid--3-col card-group__items">
+            <li class="card card--standard card--full-link">
+              <div>
+                <img
+                  src="images/Computer-Lab-1024x683.jpg"
+                  alt=""
+                  loading="lazy"
+                  fetchpriority="auto"
+                  decoding="async"
+                  class=""
+                />
+                <div class="card__text">
+                  <div>
+                    <h3 class="card__title">
+                      <span>Aarambha: A New Beginning</span>
+                    </h3>
+                    <div class="card__blurb">
+                      <p>
+                        A movement dedicated to helping motivated children
+                        return to school by providing the resources, support,
+                        and educational spaces they deserve, ensuring no child
+                        is left behind in their learning journey.
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                <div class="title text-center">
-                  <span>Free Tution Campaign</span>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Magni magnam iusto, at dicta voluptates aut deleniti sequi
-                    illo ullam doloribus!
-                  </p>
+              </div>
+            </li>
+
+            <li class="card card--standard card--full-link">
+              <div>
+                <img
+                  src="images/plantation-1024x683.jpg"
+                  alt=""
+                  loading="lazy"
+                  fetchpriority="auto"
+                  decoding="async"
+                  class=""
+                />
+                <div class="card__text">
+                  <div>
+                    <h3 class="card__title">
+                      <span>Bridging Gaps, Building Futures</span>
+                    </h3>
+                    <div class="card__blurb">
+                      <p>
+                        Through libraries, digital classrooms, fellowships, and
+                        community support, we work to strengthen public schools
+                        and empower students with opportunities that inspire
+                        confidence, curiosity, and lifelong learning.
+                      </p>
+                    </div>
+                  </div>
                 </div>
-              </a>
-            </div>
-            <div class="grid__item mb-3">
-              <a href="" target="_blank">
-                <div class="img__holder mb-2">
-                  <img
-                    src="images/JlzZgBlxNFxZVoFGoPFCLHdcmh8IZ8h2WIFfjGjk.jpg"
-                    width="100%"
-                    height="100%"
-                    alt=""
-                  />
+              </div>
+            </li>
+
+            <li class="card card--standard card--full-link">
+              <div>
+                <img
+                  src="images/Computer-Lab-1024x683.jpg"
+                  alt=""
+                  loading="lazy"
+                  fetchpriority="auto"
+                  decoding="async"
+                  class=""
+                />
+                <div class="card__text">
+                  <div>
+                    <h3 class="card__title">
+                      <span>One Step at a Time</span>
+                    </h3>
+                    <div class="card__blurb">
+                      <p>
+                        Committed to transforming education by understanding
+                        student challenges, engaging communities, and creating
+                        sustainable solutions that help every child access
+                        quality learning and explore their fullest potential.
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                <div class="title text-center">
-                  <span>HIV and AIDS</span>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Magni magnam iusto, at dicta voluptates aut deleniti sequi
-                    illo ullam doloribus!
-                  </p>
-                </div>
-              </a>
-            </div>
-            <div class="grid__item mb-3">
-              <a href="" target="_blank">
-                <div class="img__holder mb-2">
-                  <img
-                    src="images/health.jpg"
-                    width="100%"
-                    height="100%"
-                    alt=""
-                  />
-                </div>
-                <div class="title text-center">
-                  <span> Free Health camp</span>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Magni magnam iusto, at dicta voluptates aut deleniti sequi
-                    illo ullam doloribus!
-                  </p>
-                </div>
-              </a>
-            </div>
-            <div class="grid__item mb-3">
-              <a href="" target="_blank">
-                <div class="img__holder mb-2">
-                  <img
-                    src="images/plantation-1024x683.jpg"
-                    width="100%"
-                    height="100%"
-                    alt=""
-                  />
-                </div>
-                <div class="title text-center">
-                  <span>Plantation Campaign</span>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Magni magnam iusto, at dicta voluptates aut deleniti sequi
-                    illo ullam doloribus!
-                  </p>
-                </div>
-              </a>
-            </div>
-            <div class="grid__item mb-3">
-              <a href="" target="_blank">
-                <div class="img__holder mb-2">
-                  <img
-                    src="images/libraryboot.jpg"
-                    width="100%"
-                    height="100%"
-                    alt=""
-                  />
-                </div>
-                <div class="title text-center">
-                  <span>Library Boost Camp</span>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Magni magnam iusto, at dicta voluptates aut deleniti sequi
-                    illo ullam doloribus!
-                  </p>
-                </div>
-              </a>
-            </div>
-            <div class="grid__item mb-3">
-              <a href="" target="_blank">
-                <div class="img__holder mb-2">
-                  <img
-                    src="images/freetution.jpg"
-                    width="100%"
-                    height="100%"
-                    alt=""
-                  />
-                </div>
-                <div class="title text-center">
-                  <span>Free Tution Campaign</span>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Magni magnam iusto, at dicta voluptates aut deleniti sequi
-                    illo ullam doloribus!
-                  </p>
-                </div>
-              </a>
-            </div>
-            <div class="grid__item mb-3">
-              <a href="" target="_blank">
-                <div class="img__holder mb-2">
-                  <img
-                    src="images/JlzZgBlxNFxZVoFGoPFCLHdcmh8IZ8h2WIFfjGjk.jpg"
-                    width="100%"
-                    height="100%"
-                    alt=""
-                  />
-                </div>
-                <div class="title text-center">
-                  <span>HIV and AIDS</span>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Magni magnam iusto, at dicta voluptates aut deleniti sequi
-                    illo ullam doloribus!
-                  </p>
-                </div>
-              </a>
-            </div>
-            <div class="grid__item mb-3">
-              <a href="" target="_blank">
-                <div class="img__holder mb-2">
-                  <img
-                    src="images/libraryboot.jpg"
-                    width="100%"
-                    height="100%"
-                    alt=""
-                  />
-                </div>
-                <div class="title text-center">
-                  <span>Library Boost Camp</span>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Magni magnam iusto, at dicta voluptates aut deleniti sequi
-                    illo ullam doloribus!
-                  </p>
-                </div>
-              </a>
-            </div>
-          </div>
+              </div>
+            </li>
+          </ul>
           <div class="col-md-12 mb-3">
             <div class="d-flex justify-content-center mt-2">
               <a
                 href=""
-                class="btn btn-join-outline py-2 px-4 align-content-center"
-                >View All Events <i class="bi bi-arrow-right-short"></i
-              ></a>
+                class="py-1 px-4 align-content-center btn"
+                style="
+                  background: transparent !important;
+                  color: #000;
+                  border: 1px solid #000;
+                  font-weight: 400;
+                  text-transform: capitalize;
+                "
+                >&nbsp; &nbsp; View All Events   <i class="bi bi-arrow-right"></i>
+              </a>
             </div>
           </div>
         </div>
-      </section>
-      <!-- end Events and Areas of Impact SECTION -->
-      <!--start Need your support -->
-      <section class="need-support py-3" style="background-color: #ededed">
-        <div class="vission__content">
-          <div class="d-flex justify-content-center">
-            <h1>Need Your Support</h1>
-          </div>
-        </div>
-        <div class="container mb-3">
-          <div class="row text-center">
-            <div class="col-xl-4 col-sm-6 mb-2">
-              <div class="bg-white shadow-sm px-3 py-4 card-support">
-                <img
-                  src="images/Computer-Lab-1024x683.jpg"
-                  alt=""
-                  class="img-fluid mb-3 img-thumbnail1"
-                />
-                <h4 class="">Aarambha: A New Beginning</h4>
-                <p class="small text-muted">
-                  A movement dedicated to helping motivated children return to
-                  school by providing the resources, support, and educational
-                  spaces they deserve, ensuring no child is left behind in their
-                  learning journey.
-                </p>
-                <div class="d-flex justify-content-center mt-2">
-                  <a
-                    href=""
-                    class="btn btn-join py-2 px-5 d-flex justify-content-center align-items-center"
-                  >
-                    <span
-                      ><i class="fa-solid fa-circle-dollar-to-slot pe-2"></i
-                    ></span>
-                    <span>Donate</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-4 col-sm-6 mb-2">
-              <div class="bg-white shadow-sm px-3 py-4 card-support">
-                <img
-                  src="images/Computer-Lab-1024x683.jpg"
-                  alt=""
-                  class="img-fluid mb-3 img-thumbnail1"
-                />
-                <h4 class="">Bridging Gaps, Building Futures</h4>
-                <p class="small text-muted">
-                  Through libraries, digital classrooms, fellowships, and
-                  community support, we work to strengthen public schools and
-                  empower students with opportunities that inspire confidence,
-                  curiosity, and lifelong learning.
-                </p>
-                <div class="d-flex justify-content-center mt-2">
-                  <a
-                    href=""
-                    class="btn btn-join py-2 px-5 d-flex justify-content-center align-items-center"
-                  >
-                    <span
-                      ><i class="fa-solid fa-circle-dollar-to-slot pe-2"></i
-                    ></span>
-                    <span>Donate</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-4 col-sm-6 mb-2">
-              <div class="bg-white shadow-sm px-3 py-4 card-support">
-                <img
-                  src="images/Computer-Lab-1024x683.jpg"
-                  alt=""
-                  class="img-fluid mb-3 img-thumbnail1"
-                />
-                <h4 class="">One Step at a Time</h4>
-                <p class="small text-muted">
-                  Committed to transforming education by understanding student
-                  challenges, engaging communities, and creating sustainable
-                  solutions that help every child access quality learning and
-                  explore their fullest potential.
-                </p>
-                <div class="d-flex justify-content-center mt-2">
-                  <a
-                    href=""
-                    class="btn btn-join py-2 px-5 d-flex justify-content-center align-items-center"
-                  >
-                    <span
-                      ><i class="fa-solid fa-circle-dollar-to-slot pe-2"></i
-                    ></span>
-                    <span>Donate</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--end Need your support -->
-      <!-- START PARTNER SECTION -->
-      <section class="combination__section pt-5">
-        <div class="container">
-          <section class="our_patners">
-            <h4 class="small__title mb-4">Our Partner</h4>
-            <div class="partner_wrapper">
-              <div class="owl-carousel carousel_slider" id="shop_carousel">
-                <div>
-                  <a href="" target="_blank">
-                    <img
-                      src="images/jK0IGWOuxvakvXmE2ijflKoClMh9ovne4WZhhx2b.png"
-                      alt=""
-                  /></a>
-                </div>
-                <div>
-                  <a href="" target="_blank">
-                    <img
-                      src="images/mV0WPOIKDEzhP4Z7WnyJMopmfQjs7YS6pmqm5jaO.png"
-                      alt=""
-                  /></a>
-                </div>
-                <div>
-                  <a href="" target="_blank">
-                    <img
-                      src="images/DyIbpjcwZfaDSarsAIurplRX0hHNhKRqxbDnehBU.jpg"
-                      alt=""
-                  /></a>
-                </div>
-                <div>
-                  <a href="" target="_blank">
-                    <img
-                      src="images/zA374PVdi1ukZLZlshPOHmoMxFOu9IbPy37q9rvQ.png"
-                      alt=""
-                  /></a>
-                </div>
-                <div>
-                  <a href="" target="_blank">
-                    <img
-                      src="images/OKERhpdWuKcFQ6ogEJYD9nOmNRqrwOPzGtYElDgi.png"
-                      alt=""
-                  /></a>
-                </div>
-                <div>
-                  <a href="" target="_blank">
-                    <img
-                      src="images/Z6c3Rm7c4IiqMFu94iKCUvjvWjuXceJnzmGoW92A.png"
-                      alt=""
-                  /></a>
-                </div>
-                <div>
-                  <a href="" target="_blank">
-                    <img
-                      src="images/IkYGX1QVQ2AOIwJIxwMvsBmuAppNNHseaL8sqnCH.jpg"
-                      alt=""
-                  /></a>
-                </div>
-                <div>
-                  <a href="" target="_blank">
-                    <img
-                      src="images/T71uoF97HtmykV3gWsFhx5K8cBmnZjAvP176ndFn.jpg"
-                      alt=""
-                  /></a>
-                </div>
-                <div>
-                  <a href="" target="_blank">
-                    <img
-                      src="images/LYeiwoYk4bJCPBLk685HRlDgTzIhopMnTiK4VZaD.png"
-                      alt=""
-                  /></a>
-                </div>
-              </div>
-            </div>
-          </section>
-        </div>
-      </section>
-      <!-- END PARTNER SECTION -->
+      </div>
+    </section>
+    <!-- end Events and Areas of Impact SECTION -->
 
-      <!-- model section  -->
-    </main>
+    <!-- START PARTNER SECTION -->
 
-    <footer
-      class="footer__section"
-      style="
-        background-image: url('images/bg.jpg');
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-      "
-    >
+    <section class="combination__section pb-3">
+      <div class="container">
+        <section class="our_patners p-0">
+          <div class="vission__content p-0">
+            <div class="d-flex justify-content-center">
+              <h1 class="py-0 my-0">OUR PARTNER</h1>
+            </div>
+          </div>
+          <div class="partner_wrapper">
+            <div class="carousel_slider d-flex gap-5 justify-content-center">
+              <div>
+                <a href="" target="_blank">
+                  <img
+                    src="images/jK0IGWOuxvakvXmE2ijflKoClMh9ovne4WZhhx2b.png"
+                    alt=""
+                /></a>
+              </div>
+              <div>
+                <a href="" target="_blank">
+                  <img
+                    src="images/mV0WPOIKDEzhP4Z7WnyJMopmfQjs7YS6pmqm5jaO.png"
+                    alt=""
+                /></a>
+              </div>
+              <div>
+                <a href="" target="_blank">
+                  <img
+                    src="images/DyIbpjcwZfaDSarsAIurplRX0hHNhKRqxbDnehBU.jpg"
+                    alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+    <!-- END PARTNER SECTION -->
+
+    <!-- model section  -->
+
+    <a href="" class="floating-icon"><span><i class="bi bi-heart-fill"></i></span> DONATE</a>
+
+    <footer class="footer__section">
       <div class="footer_overlay pt-5">
         <div class="container">
           <div class="row">
@@ -830,12 +1128,10 @@
             <div class="col-lg-3 col-md-6 col-6 mb-3">
               <h2><span>Q</span>uick Links</h2>
               <ul class="quick-links">
-                <li><a href="">Home</a></li>
                 <li><a href="who-we-are">About Us</a></li>
                 <li><a href="member_form.html">Be a Member</a></li>
                 <li><a href="volunteer_form.html">Be a volunteer</a></li>
                 <li><a href="">Our Work</a></li>
-                <li><a href="contact-us">Contact Us</a></li>
                 <li><a href="">Privacy & Policy</a></li>
               </ul>
             </div>
@@ -855,41 +1151,13 @@
                     <h6><i class="fa-solid fa-envelope"></i> Email</h6>
                     <span><a href="">we.aarambha@gmail.com </a></span>
                   </li>
-                  <li>
-                    <h6><i class="fa-solid fa-clock-rotate-left"></i> Time</h6>
-                    <span>9am - 5pm Saturday & Sunday Closed</span>
-                  </li>
                 </ul>
               </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
-              <h2><span>Our</span>Awards</h2>
+              <h2><span>O</span>ur Awards</h2>
               <div class="gallery_wrapper">
                 <div class="row flex-wrap">
-                  <div class="col-4">
-                    <img
-                      src="images/Computer-Lab-1024x683.jpg"
-                      width="100%"
-                      height="100%"
-                      alt=""
-                    />
-                  </div>
-                  <div class="col-4">
-                    <img
-                      src="images/UPUIwfu57oXIe6XBNQENLbjgP7TgkSJgOIeINt31.jpg"
-                      width="100%"
-                      height="100%"
-                      alt=""
-                    />
-                  </div>
-                  <div class="col-4">
-                    <img
-                      src="images/Farewell-1024x683.jpg"
-                      width="100%"
-                      height="100%"
-                      alt=""
-                    />
-                  </div>
                   <div class="col-4">
                     <img
                       src="images/Award-1.jpg"
@@ -954,203 +1222,13 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="js/general.js"></script>
     <script src="js/nav.js"></script>
-    <script>
-      (function () {
-        $("[data-slider-wrap]").each(function () {
-          var _this = $(this),
-            _slick = _this.find("[data-slider]");
+    <script src="js/script.js"></script>
+    <script src="js/min.js"></script>
 
-          function typeInit(target, str, destroy) {
-            var typedOptions = {
-                strings: [str],
-                typeSpeed: 30,
-                cursorChar: "",
-              },
-              _typedjs = new Typed(target, typedOptions);
-
-            if (destroy === true) {
-              _typedjs.destroy();
-            }
-          } //typeInit END
-
-          _slick
-            .on("init", function (event, slick) {
-              var _current = _slick.find("[data-slick-index='0']"),
-                _input = _current.find("[data-typed]"),
-                _inputNative = _input[0],
-                _data = _input.data("typed");
-
-              typeInit(_inputNative, _data);
-            })
-            .on("afterChange", function (event, slick, currentSlide) {
-              var _getCurrent = _slick.find(
-                  "[data-slick-index='" + currentSlide + "']"
-                ),
-                _getInput = _getCurrent.find("[data-typed]"),
-                _getInputNative = _getInput[0],
-                _getData = _getInput.data("typed"),
-                _getAll = $("[data-slick-index]"),
-                _getAllInput = _getAll.find("[data-typed]"),
-                _getAllInputNative = _getAllInput[0];
-
-              //destroy
-              typeInit(_getAllInputNative, _getData, true);
-              _getAllInput.html("").next().remove();
-
-              //init
-              typeInit(_getInputNative, _getData);
-            });
-
-          _slick.slick({
-            // fade: true,
-            speed: 800,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            infinite: true,
-            autoplay: true,
-            autoplaySpeed: 8000,
-            arrows: false,
-            dots: false,
-            pauseOnHover: false,
-            pauseOnFocus: false,
-          });
-        });
-      })();
-    </script>
-    <!-- swiper-js  -->
-    <script>
-      var swiper = new Swiper(".testi", {
-        grabCursor: true,
-        loop: true,
-        effect: "creative",
-        speed: 1000,
-        autoplay: {
-          delay: 2500,
-          disableOnInteraction: false,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        creativeEffect: {
-          prev: {
-            shadow: true,
-            origin: "left center",
-            translate: ["-5%", 0, -200],
-            rotate: [0, 100, 0],
-          },
-          next: {
-            origin: "right center",
-            translate: ["5%", 0, -200],
-            rotate: [0, -100, 0],
-          },
-        },
-      });
-
-      // type script
-      var typed = new Typed(".typing2", {
-        strings: ["trust", "believe", "commitment"],
-        typeSpeed: 100,
-        startDelay: 0,
-        backSpeed: 60,
-        backDelay: 500,
-        loop: true,
-        cursorChar: "|",
-        contentType: "html",
-      });
-      // type script end
-    </script>
-    <!-- swiper-js end -->
-    <!-- star js  -->
-    <script>
-      const stars = document.querySelectorAll(".star");
-
-      stars.forEach((star, index) => {
-        star.addEventListener("click", (e) => {
-          let current_star = star.getAttribute("data-index");
-
-          var my_stars = star
-            .closest(".review_rating")
-            .querySelectorAll(".star");
-
-          my_stars.forEach((star_index, i) => {
-            if (current_star >= i + 1) {
-              star_index.innerHTML = "";
-            } else {
-              star_index.innerHTML = "";
-            }
-          });
-        });
-      });
-    </script>
-    <!-- star js end -->
-    <script>
-      $("#shop_carousel").owlCarousel({
-        loop: true,
-        margin: 10,
-        autoplay: true,
-        slideTransition: "linear",
-        autoplayTimeout: 3000,
-        autoplaySpeed: 3000,
-        nav: false,
-        autoplayHoverPause: true,
-        responsive: {
-          0: {
-            items: 2,
-          },
-          600: {
-            items: 3,
-          },
-          1000: {
-            items: 5,
-          },
-          1200: {
-            items: 6,
-          },
-        },
-      });
-    </script>
-    <!-- scripts end -->
-    <script type="text/javascript">
-      $(window).on("load", function () {
-        $("#myModal").modal("show");
-      });
-    </script>
-    <script>
-      $(document).ready(function () {
-        $("#reload").on("click", function (e) {
-          e.preventDefault();
-          $.ajax({
-            url: "captcha-reload",
-            type: "GET",
-            success: function (data) {
-              $(".captcha span").html(data.captcha);
-            },
-          });
-        });
-      });
-    </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      // Animated "Connectivity" text
-      const word = "Connectivity";
-      const container = document.getElementById("connectivity");
-      word.split("").forEach((letter, i) => {
-        const span = document.createElement("span");
-        span.className = "letter";
-        span.textContent = letter === " " ? "\u00A0" : letter;
-        span.style.animationDelay = `${i * 0.04}s`;
-        container.appendChild(span);
-      });
 
-      // Clickable Dots → Open Google Maps
-      document.querySelectorAll(".dot").forEach((dot) => {
-        dot.addEventListener("click", () => {
-          const lat = dot.dataset.lat;
-          const lng = dot.dataset.lng;
-          window.open(`https://www.google.com/maps?q=${lat},${lng}`, "_blank");
-        });
-      });
-    </script>
+      <!-- Fundraise Up: the new standard for online giving -->
+   
+    <!-- End Fundraise Up -->
   </body>
 </html>
