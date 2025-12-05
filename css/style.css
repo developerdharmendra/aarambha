@@ -384,7 +384,6 @@ img {
 .theme--orange {
 	--tw-bg-opacity: 1;
 	background-color: #d6692a;
-	background-color: rgba(235, 113, 0, var(--tw-bg-opacity, 1));
 	--tw-text-opacity: 1;
 	color: #fff;
 	color: rgba(255, 255, 255, var(--tw-text-opacity, 1))
@@ -393,7 +392,6 @@ img {
 .theme--brown {
 	--tw-bg-opacity: 1;
 	background-color: #8f5556;
-	background-color: rgba(235, 113, 0, var(--tw-bg-opacity, 1));
 	--tw-text-opacity: 1;
 	color: #fff;
 	color: rgba(255, 255, 255, var(--tw-text-opacity, 1))
@@ -414,7 +412,6 @@ img {
 .theme--blue-dark {
 	--tw-bg-opacity: 1;
 	background-color:  #2d3b5b ;
-	background-color: rgba(36, 30, 78, var(--tw-bg-opacity, 1));
 	--tw-text-opacity: 1;
 	color: #fff;
 	color: rgba(255, 255, 255, var(--tw-text-opacity, 1))
@@ -928,7 +925,7 @@ screen and (max-width:736px) and (orientation:landscape) {
 	position: relative;
 	text-transform: uppercase;
 	--tw-text-opacity: 1;
-	background-image: linear-gradient(90deg, #2d3b5b 50%, #e36f1e 0);
+	background-image: linear-gradient(90deg, #2d3b5b 50%, #d6692a 0);
 	background-position: 100% 100%;
 	background-size: 200% 100%;
 	border-radius: 2.25rem;
@@ -1206,7 +1203,7 @@ screen and (max-width:736px) and (orientation:landscape) {
 }
 
 .select2-container--default .select2-selection--single .select2-selection__arrow b {
-	border-color: #e36f1e transparent transparent;
+	border-color: #d6692a transparent transparent;
 	border-style: solid;
 	border-width: 5px 4px 0;
 	height: 0;
@@ -1237,7 +1234,7 @@ screen and (max-width:736px) and (orientation:landscape) {
 }
 
 .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
-	border-color: transparent transparent #e36f1e;
+	border-color: transparent transparent #d6692a;
 	border-width: 0 4px 5px
 }
 
@@ -1784,7 +1781,7 @@ b {
 	position: relative;
 	text-transform: uppercase;
 	--tw-text-opacity: 1;
-	background-image: linear-gradient(90deg, #2d3b5b 50%, #e36f1e 0);
+	background-image: linear-gradient(90deg, #2d3b5b 50%, #d6692a 0);
 	background-position: 100% 100%;
 	background-size: 200% 100%;
 	border-radius: 2.25rem;
@@ -1795,6 +1792,50 @@ b {
 	text-decoration-line: none;
 	transition: background-size .5s, background-position, .5s, border-color .5s
 }
+
+.btn1 {
+	font-size: 1.125rem;
+	font-weight: 700;
+	letter-spacing: .025em;
+	line-height: 1.6625rem;
+	position: relative;
+	text-transform: uppercase;
+	--tw-text-opacity: 1;
+	background-image: linear-gradient(90deg, #d6692a 50%, #2d3b5b 0);
+	background-position: 100% 100%;
+	background-size: 200% 100%;
+	border-radius: 2.25rem;
+	color: #fff;
+	color: rgba(255, 255, 255, var(--tw-text-opacity, 1));
+	font-family: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+	padding: .75rem 2rem;
+	text-decoration-line: none;
+	transition: background-size .5s, background-position, .5s, border-color .5s
+}
+
+
+.btn1,
+.btn:after {
+	display: inline-block
+}
+
+.btn1:after {
+	content: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='19' height='12' fill='none' aria-hidden='true' class='arrow--right'%3E%3Cpath fill='%23FFF' d='M1 5.25H.25v1.5H1zm17.53 1.28a.75.75 0 0 0 0-1.06L13.757.697a.75.75 0 0 0-1.06 1.06L16.939 6l-4.242 4.243a.75.75 0 0 0 1.06 1.06zM1 6.75h17v-1.5H1z'/%3E%3C/svg%3E");
+	margin-left: .5rem
+}
+
+.btn1:active,
+.btn1:focus,
+.btn1:hover {
+	--tw-border-opacity: 1;
+	background-position: 0 100%;
+	background-size: 201% 100%;
+	border-color: #2d3b5b;
+    color: #fff;
+	border-color: rgba(36, 30, 78, var(--tw-border-opacity, 1));
+	text-decoration-line: none !important
+}
+
 
 .btn,
 .btn:after {
@@ -1820,7 +1861,7 @@ b {
 
 .btn--orange-white {
     font-family: "Manrope", sans-serif !important;
-	background-image: linear-gradient(90deg, #fff 50%, #e36f1e 0)
+	background-image: linear-gradient(90deg, #fff 50%, #d6692a 0)
 }
 
 .btn--orange-white:active,
@@ -1842,7 +1883,7 @@ b {
 
 .btn--white {
 	--tw-border-opacity: 1;
-	background-image: linear-gradient(90deg, #e36f1e 50%, #fff 0);
+	background-image: linear-gradient(90deg, #d6692a 50%, #fff 0);
 	border-color: #fff;
 	border-color: rgba(255, 255, 255, var(--tw-border-opacity, 1))
 }
@@ -1885,7 +1926,7 @@ b {
 
 .btn-lilac {
 	--tw-border-opacity: 1;
-	background-image: linear-gradient(90deg, #e36f1e 50%, #bf7cb5 0);
+	background-image: linear-gradient(90deg, #d6692a 50%, #bf7cb5 0);
 	border-color: #bf7cb5;
 	border-color: rgba(191, 124, 181, var(--tw-border-opacity, 1))
 }
@@ -2021,7 +2062,7 @@ b {
 .card-group--blue-dark .card--full-link a:active .card__title span,
 .card-group--blue-dark .card--full-link a:focus .card__title span,
 .card-group--blue-dark .card--full-link a:hover .card__title span {
-	background-image: linear-gradient(0deg, rgba(227, 111, 30, 0), rgba(227, 111, 30, 0) 5%, #e36f1e 0, #e36f1e 41%, rgba(227, 111, 30, 0) 0)
+	background-image: linear-gradient(0deg, rgba(227, 111, 30, 0), rgba(227, 111, 30, 0) 5%, #d6692a 0, #d6692a 41%, rgba(227, 111, 30, 0) 0)
 }
 
 .card--simple {
@@ -3970,7 +4011,7 @@ b {
 	position: relative;
 	text-transform: uppercase;
 	--tw-text-opacity: 1;
-	background-image: linear-gradient(90deg, #2d3b5b 50%, #e36f1e 0);
+	background-image: linear-gradient(90deg, #2d3b5b 50%, #d6692a 0);
 	background-position: 100% 100%;
 	background-size: 200% 100%;
 	border-radius: 2.25rem;
@@ -3999,7 +4040,7 @@ b {
 }
 
 .newsletter-banner input[type=submit] {
-	background-image: linear-gradient(90deg, #fff 50%, #e36f1e 0)
+	background-image: linear-gradient(90deg, #fff 50%, #d6692a 0)
 }
 
 .newsletter-banner input[type=submit]:active,
@@ -4226,7 +4267,7 @@ b {
 .card-group.card-group--blue-dark .card {
 	--tw-bg-opacity: 1;
 	background-color: #2d3b5b;
-	background-color: rgba(36, 30, 78, var(--tw-bg-opacity, 1));
+	/* background-color: rgba(36, 30, 78, var(--tw-bg-opacity, 1)); */
 	--tw-text-opacity: 1;
 	color: #fff;
     border-radius: 5px;

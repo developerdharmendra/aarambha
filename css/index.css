@@ -4120,9 +4120,7 @@ figcaption .project-creator {
           width: 100%;
           z-index: 0;
           --tw-bg-opacity: 1;
-          background-color: #933d41;
-          background-color: rgba(191, 124, 181, var(#933d41, 1));
-
+          background-color: var(--main-color);
           content: "";
           height: 1.6875rem;
         }
@@ -4144,7 +4142,7 @@ figcaption .project-creator {
           width: 100%;
           z-index: 0;
           --tw-bg-opacity: 1;
-          background-color: #023059;
+          background-color: var(--secondary-color);
           content: "";
           height: 1.6875rem;
         }
@@ -4160,7 +4158,7 @@ figcaption .project-creator {
           position: absolute;
           width: 100%;
           z-index: 0;
-          background-color: #df5a00;
+          background-color: var(--main-color);
           content: "";
           height: 1.6875rem;
         }
