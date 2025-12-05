@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
@@ -13,7 +14,7 @@
       rel="stylesheet"
       crossorigin="anonymous"
     />
-     <link
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
       crossorigin="anonymous"
@@ -32,10 +33,11 @@
     <link rel="stylesheet" href="css/animate.min.css" />
     <!-- custom-css  -->
     <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <!-- custom-css end -->
     <link rel="icon" type="image/png" href="images/favicon.png" />
     <title>Aarambha Foundation &#8211; Our Beginning for the Change</title>
-    <style>
+     <style>
       .header-top img {
         width: 100%;
         max-height: 250px;
@@ -43,17 +45,17 @@
         border-radius: 10px;
       }
       .header-bottom {
-        color: #00167a;
+        color:  #2d3b5b;
         background-color: #fff;
-        border-top: 10px solid #7a0000;
-        border-left: 1px solid #7a0000;
-        border-right: 1px solid #7a0000;
-        border-bottom: 1px solid #7a0000;
+        border-top: 10px solid #8f5556;
+        border-left: 1px solid #8f5556;
+        border-right: 1px solid #8f5556;
+        border-bottom: 1px solid #8f5556;
         padding: 5px 20px;
         border-radius: 10px 10px 0 0;
       }
       .header-bottom h1 {
-        margin: 5px 0;
+        margin: 0;
         font-size: 25px;
       }
       .header-bottom .header-content p {
@@ -66,15 +68,13 @@
       #membershipForm {
         display: none;
       }
-      .start-section {
-        text-align: center;
-      }
+      
       .start-section h2 {
         margin: 0;
         padding: 0;
       }
       .start-btn {
-        background: #00167a;
+        background:  #2d3b5b;
         color: white;
         padding: 10px 20px;
         border: none;
@@ -83,10 +83,10 @@
         cursor: pointer;
       }
       .start-btn:hover {
-        background: #7a0000;
+        background: #8f5556;
       }
       .btn-success {
-        background: #7a0000 !important;
+        background: #8f5556 !important;
         color: white;
         padding: 10px 20px;
         border: none;
@@ -95,7 +95,7 @@
         cursor: pointer;
       }
       .btn-success:hover {
-        background: #00167a !important;
+        background:  #2d3b5b !important;
       }
       .form-step {
         display: none;
@@ -116,6 +116,8 @@
       label {
         text-align: left !important;
         color: #000;
+        text-transform: capitalize;
+        font-weight: 400;
       }
       input[type="text"],
       input[type="date"],
@@ -140,81 +142,511 @@
         color: #8b6f47;
       }
     </style>
-    <script src="js/api_1.js" async="" defer=""></script>
   </head>
   <body>
-    <section class="main__header">
-      <header id="nav-bar" class="fixed-top">
-        <nav class="navbar">
-          <div class="container">
-            <div class="logo">
-              <a href="index.html">
-                <img
-                  src="images/logo.png"
-                  width="100%"
-                  height="100%"
-                  alt="Logo"
-                />
-              </a>
+    <nav class="navigation">
+      <a href="index.html" aria-label="Home" class="navigation__home-link">
+        <img
+          src="images/logo.png"
+          class="d-md-block d-none"
+          style="width: 14rem"
+          alt=""
+        />
+        <img
+          src="images/favicon.png"
+          class="d-block d-md-none"
+          style="width: 6rem"
+          alt=""
+        />
+      </a>
+      <div class="navigation__links">
+        <ul class="navigation__level-one" id="navigation__level-one">
+          <li class="navigation__level-one-item" tabindex="0">
+            <a
+              href=""
+              class="navigation__level-one-link desktop-only--navigation"
+            >
+              Our Work
+              <svg
+                width="7"
+                height="5"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+                class="arrow--down"
+              >
+                <path
+                  d="M6.364.682 3.682 3.364 1 .682"
+                  stroke="#E36F1E"
+                  stroke-width="1.5"
+                ></path>
+              </svg>
+            </a>
+            <button
+              class="navigation__submenu-open-button mobile-only--navigation"
+              aria-controls="#What_we_do"
+              aria-label="Open What we do menu"
+            >
+              Our Work
+              <svg
+                width="7"
+                height="5"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+                class="arrow--down"
+              >
+                <path
+                  d="M6.364.682 3.682 3.364 1 .682"
+                  stroke="#E36F1E"
+                  stroke-width="1.5"
+                ></path>
+              </svg>
+            </button>
+            <div
+              class="navigation__level-two navigation__submenu"
+              id="What_we_do"
+            >
+              <div class="navigation__level-two-content contained-width">
+                <header class="navigation__level-two-header">
+                  <button
+                    class="navigation__submenu-close-button mobile-only--navigation"
+                    aria-controls="#What_we_do"
+                    aria-label="Close What we do menu"
+                  >
+                    <svg
+                      width="7"
+                      height="5"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true"
+                      class="arrow--down"
+                    >
+                      <path
+                        d="M6.364.682 3.682 3.364 1 .682"
+                        stroke="#E36F1E"
+                        stroke-width="1.5"
+                      ></path>
+                    </svg>
+                    Back
+                  </button>
+                  <h2 class="navigation__level-two-title">
+                    <a href="" class="reverse-underline">Our Work</a>
+                  </h2>
+                </header>
+
+                <ul>
+                  <li class="navigation__level-two-item">
+                    <a href="" class="navigation__level-two-link">test</a>
+                  </li>
+
+                  <li class="navigation__level-two-item">
+                    <a href="" class="navigation__level-two-link">Test</a>
+                  </li>
+                </ul>
+
+                <ul>
+                  <li class="navigation__level-two-item">
+                    <a href="" class="navigation__level-two-link">Test</a>
+                  </li>
+                </ul>
+
+                <ul>
+                  <li class="navigation__level-two-item">
+                    <a href="" class="navigation__level-two-link"
+                      >Where we work</a
+                    >
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="d-md-none">
-              <a href="" class="btn btn-join py-2 px-3">
-                <span
-                  ><i class="fa-solid fa-circle-dollar-to-slot pe-1"></i
-                ></span>
-                <span>Donate</span>
-              </a>
-            </div>
-            <div class="sitenavigation">
-              <span class="menu-icon">
-                <a href="#" class="menu example5"><span></span></a>
-                <div id="hamburger">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>
-              </span>
-              <ul>
-                <li class="nav-link bg-hover">
-                  <a href="" class="navbar__links">Our Work</a>
-                </li>
-                <li class="nav-link bg-hover">
-                  <a href="" class="navbar__links">Stories</a>
-                </li>
-                <li class="nav-dropdown bg-hover">
-                  <a href="#" class="navbar__links"
-                    >Get Involved <i class="fa-solid fa-caret-down"></i
-                  ></a>
-                  <ul>
-                    <li>
-                      <a href="member_form.html" class="sub__links"
-                        >Be a Member</a
+          </li>
+
+          <li class="navigation__level-one-item" tabindex="0">
+            <a
+              href="/get-involved/"
+              class="navigation__level-one-link desktop-only--navigation"
+            >
+              Get involved
+              <svg
+                width="7"
+                height="5"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+                class="arrow--down"
+              >
+                <path
+                  d="M6.364.682 3.682 3.364 1 .682"
+                  stroke="#E36F1E"
+                  stroke-width="1.5"
+                ></path>
+              </svg>
+            </a>
+            <button
+              class="navigation__submenu-open-button mobile-only--navigation"
+              aria-controls="#Get_involved"
+              aria-label="Open Get involved menu"
+            >
+              Get involved
+              <svg
+                width="7"
+                height="5"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+                class="arrow--down"
+              >
+                <path
+                  d="M6.364.682 3.682 3.364 1 .682"
+                  stroke="#E36F1E"
+                  stroke-width="1.5"
+                ></path>
+              </svg>
+            </button>
+            <div
+              class="navigation__level-two navigation__submenu"
+              id="Get_involved"
+            >
+              <div class="navigation__level-two-content contained-width">
+                <header class="navigation__level-two-header">
+                  <button
+                    class="navigation__submenu-close-button mobile-only--navigation"
+                    aria-controls="#Get_involved"
+                    aria-label="Close Get involved menu"
+                  >
+                    <svg
+                      width="7"
+                      height="5"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true"
+                      class="arrow--down"
+                    >
+                      <path
+                        d="M6.364.682 3.682 3.364 1 .682"
+                        stroke="#E36F1E"
+                        stroke-width="1.5"
+                      ></path>
+                    </svg>
+                    Back
+                  </button>
+                  <h2 class="navigation__level-two-title">
+                    <a href="/get-involved/" class="reverse-underline"
+                      >Get involved</a
+                    >
+                  </h2>
+                </header>
+
+                <ul>
+                  <li class="navigation__level-two-item">
+                    <a
+                      href="/get-involved/take-action/"
+                      class="navigation__level-two-link desktop-only--navigation"
+                    >
+                      Take action
+                    </a>
+                    <button
+                      class="navigation__submenu-open-button mobile-only--navigation"
+                      aria-expanded="false"
+                      aria-label="Open Take action menu"
+                    >
+                      Take action
+                      <svg
+                        width="7"
+                        height="5"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true"
+                        class="arrow--down"
                       >
-                    </li>
-                    <li>
-                      <a href="volunteer_form.html" class="sub__links">Be a volunteer</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="nav-link bg-none mr-lg-2">
-                  <div class="btns_wrapper d-flex align-items-center">
+                        <path
+                          d="M6.364.682 3.682 3.364 1 .682"
+                          stroke="#E36F1E"
+                          stroke-width="1.5"
+                        ></path>
+                      </svg>
+                    </button>
+                    <div
+                      class="navigation__level-three navigation__submenu"
+                      id="Take_action"
+                    >
+                      <header class="navigation__level-two-header">
+                        <button
+                          class="navigation__submenu-close-button mobile-only--navigation"
+                          aria-controls="#Take_action"
+                          aria-label="Close Get involved menu"
+                        >
+                          <svg
+                            width="7"
+                            height="5"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            aria-hidden="true"
+                            class="arrow--down"
+                          >
+                            <path
+                              d="M6.364.682 3.682 3.364 1 .682"
+                              stroke="#E36F1E"
+                              stroke-width="1.5"
+                            ></path>
+                          </svg>
+                          Back
+                        </button>
+                      </header>
+                      <ul>
+                        <li class="navigation__level-three-item">
+                          <a
+                            href="https://action.careinternational.org.uk/protect-women-and-girls-funding-cuts?utm_source=website&utm_medium=navigation&utm_campaign=emailMP_aidcuts"
+                            class="navigation__level-three-link"
+                            >Email your MP: Protect women and girls from funding
+                            cuts</a
+                          >
+                        </li>
+
+                        <li class="navigation__level-three-item">
+                          <a
+                            href="/get-involved/take-action/gaza-humanitarian-crisis-appeal/"
+                            class="navigation__level-three-link"
+                            >Gaza Humanitarian Crisis Appeal</a
+                          >
+                        </li>
+
+                        <li class="navigation__level-three-item">
+                          <a
+                            href="/get-involved/take-action/ukraine-crisis/"
+                            class="navigation__level-three-link"
+                            >Ukraine Humanitarian Appeal</a
+                          >
+                        </li>
+
+                        <li class="navigation__level-three-item">
+                          <a
+                            href="/get-involved/take-action/sudan-emergency-appeal/"
+                            class="navigation__level-three-link"
+                            >Sudan Emergency Appeal</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+
+                <ul>
+                  <li class="navigation__level-two-item">
+                    <a
+                      href="/get-involved/send-a-christmas-care-package-today/"
+                      class="navigation__level-two-link"
+                      >Send a Christmas CARE Package</a
+                    >
+                  </li>
+
+                  <li class="navigation__level-two-item">
+                    <a
+                      href="/get-involved/stand-with-women-today-tote/"
+                      class="navigation__level-two-link"
+                      >Stand with women: Free tote bag</a
+                    >
+                  </li>
+
+                  <li class="navigation__level-two-item">
+                    <a
+                      href="https://lendwithcare.org/?lwc-source=care-website"
+                      class="navigation__level-two-link"
+                      >Change a life with a loan through Lendwithcare</a
+                    >
+                  </li>
+
+                  <li class="navigation__level-two-item">
+                    <a
+                      href="/get-involved/leave-a-gift-in-your-will/"
+                      class="navigation__level-two-link"
+                      >Leave a gift in your Will</a
+                    >
+                  </li>
+                </ul>
+
+                <ul>
+                  <li class="navigation__level-two-item">
+                    <a
+                      href="https://careinternationalstore.com/"
+                      class="navigation__level-two-link"
+                      >Online shop</a
+                    >
+                  </li>
+
+                  <li class="navigation__level-two-item">
+                    <a
+                      href="/get-involved/events/"
+                      class="navigation__level-two-link"
+                      >Fundraising events</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <li class="navigation__level-one-item" tabindex="0">
+            <a
+              href=""
+              class="navigation__level-one-link desktop-only--navigation"
+            >
+              Stories
+              <svg
+                width="7"
+                height="5"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+                class="arrow--down"
+              >
+                <path
+                  d="M6.364.682 3.682 3.364 1 .682"
+                  stroke="#E36F1E"
+                  stroke-width="1.5"
+                ></path>
+              </svg>
+            </a>
+            <button
+              class="navigation__submenu-open-button mobile-only--navigation"
+              aria-controls="#News_+_Stories"
+              aria-label="Open News + Stories menu"
+            >
+              Stories
+              <svg
+                width="7"
+                height="5"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+                class="arrow--down"
+              >
+                <path
+                  d="M6.364.682 3.682 3.364 1 .682"
+                  stroke="#E36F1E"
+                  stroke-width="1.5"
+                ></path>
+              </svg>
+            </button>
+            <div
+              class="navigation__level-two navigation__submenu"
+              id="News_+_Stories"
+            >
+              <div
+                class="contained-width navigation__level-two-content navigation__level-two-content--with-highlight"
+              >
+                <header class="navigation__level-two-header">
+                  <button
+                    class="navigation__submenu-close-button mobile-only--navigation"
+                    aria-controls="#News_+_Stories"
+                    aria-label="Close News + Stories menu"
+                  >
+                    <svg
+                      width="7"
+                      height="5"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true"
+                      class="arrow--down"
+                    >
+                      <path
+                        d="M6.364.682 3.682 3.364 1 .682"
+                        stroke="#E36F1E"
+                        stroke-width="1.5"
+                      ></path>
+                    </svg>
+                    Back
+                  </button>
+                  <h2 class="navigation__level-two-title">
+                    <a href="" class="reverse-underline">Stories</a>
+                  </h2>
+                </header>
+
+                <ul>
+                  <li>
                     <a
                       href=""
-                      class="btn btn-join py-2 px-3 d-flex justify-content-center align-items-center d-none d-md-block"
+                      class="navigation__level-two-link reverse-underline"
+                      >Latest news + stories</a
                     >
-                      <span
-                        ><i class="fa-solid fa-circle-dollar-to-slot pe-1"></i
-                      ></span>
-                      <span>Donate</span>
-                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href=""
+                      class="navigation__level-two-link reverse-underline"
+                      >Press office</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      href=""
+                      class="navigation__level-two-link reverse-underline"
+                      >Latest press releases</a
+                    >
+                  </li>
+                </ul>
+
+                <div class="navigation__panel">
+                  <!-- This is the highlight panel -->
+                  <img
+                    class="navigation-panel__image"
+                    src="images/favicon.png"
+                    alt="Health clinic, Deir Al-Balah, Gaza"
+                  />
+                  <div>
+                    <h3 class="navigation__panel-title">
+                      Gaza Humanitarian Crisis
+                    </h3>
+                    <p class="navigation__panel-description">
+                      Find out how we are providing life-saving support in Gaza
+                      to families in crisis, with your support.
+                    </p>
+                    <a href="" class="navigation__panel-link">Find out more</a>
                   </div>
-                </li>
-              </ul>
+                </div>
+              </div>
             </div>
-          </div>
-        </nav>
-      </header>
-    </section>
+          </li>
+
+          <li
+            class="navigation__level-one-item navigation__search"
+            tabindex="0"
+          >
+            <a href="" class="navigation__level-one-link"> Login </a>
+          </li>
+        </ul>
+
+        <a
+          href="https://careinternational.donorsupport.co/-/XXNEZUWP"
+          class="btn navigation__donate"
+          >Donate</a
+        >
+        <button
+          class="navigation__toggle mobile-only--navigation"
+          aria-expanded="false"
+          aria-label="Open navigation menu"
+          aria-controls="#navigation__level-one"
+        >
+          <svg
+            width="22"
+            height="20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+          >
+            <path
+              d="M0 1h22M0 9.556h22M0 18.111h22"
+              stroke="#000"
+              stroke-width="2"
+            ></path>
+          </svg>
+        </button>
+      </div>
+    </nav>
+   
     <!-- <main class="mt-5" style="background-image: url('images/volentier.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; position: relative; min-height: 35vh; display: flex; align-items: center; justify-content: center;">
          <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.82);"></div>
          <div style="position: relative; z-index: 2; text-align: center; ">
@@ -222,7 +654,7 @@
              <p style="font-size: 1.2rem; margin-bottom: 0; color: #ccc;">Join our mission to empower communities and create lasting change across Nepal</p>
          </div>
          </main> -->
-    <div class="container">
+    <div class="container member-section">
       <div class="row justify-content-center">
         <div class="col-12 col-md-8">
           <div
@@ -274,7 +706,7 @@
             <hr style="border: 1px solid #000" />
             <div class="content">
               <div class="start-section mb-3" id="startSection">
-                <h3 class="mb-0 pb-0">Ready to Join Aarambha Foundation?</h3>
+                <h3 class="mt-1 pb-0">Ready to Join Aarambha Foundation?</h3>
                 <p class="mb-0">
                   Click below to start your membership application process.
                 </p>
@@ -780,15 +1212,10 @@
         </div>
       </div>
     </div>
-    <footer
-      class="footer__section"
-      style="
-        background-image: url('images/bg.jpg');
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-      "
-    >
+   
+     <a href="" class="floating-icon"><span><i class="bi bi-heart-fill"></i></span> DONATE</a>
+
+    <footer class="footer__section">
       <div class="footer_overlay pt-5">
         <div class="container">
           <div class="row">
@@ -829,12 +1256,10 @@
             <div class="col-lg-3 col-md-6 col-6 mb-3">
               <h2><span>Q</span>uick Links</h2>
               <ul class="quick-links">
-                <li><a href="">Home</a></li>
                 <li><a href="who-we-are">About Us</a></li>
                 <li><a href="member_form.html">Be a Member</a></li>
                 <li><a href="volunteer_form.html">Be a volunteer</a></li>
                 <li><a href="">Our Work</a></li>
-                <li><a href="contact-us">Contact Us</a></li>
                 <li><a href="">Privacy & Policy</a></li>
               </ul>
             </div>
@@ -854,41 +1279,13 @@
                     <h6><i class="fa-solid fa-envelope"></i> Email</h6>
                     <span><a href="">we.aarambha@gmail.com </a></span>
                   </li>
-                  <li>
-                    <h6><i class="fa-solid fa-clock-rotate-left"></i> Time</h6>
-                    <span>9am - 5pm Saturday & Sunday Closed</span>
-                  </li>
                 </ul>
               </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
-              <h2><span>Our</span>Awards</h2>
+              <h2><span>O</span>ur Awards</h2>
               <div class="gallery_wrapper">
                 <div class="row flex-wrap">
-                  <div class="col-4">
-                    <img
-                      src="images/Computer-Lab-1024x683.jpg"
-                      width="100%"
-                      height="100%"
-                      alt=""
-                    />
-                  </div>
-                  <div class="col-4">
-                    <img
-                      src="images/UPUIwfu57oXIe6XBNQENLbjgP7TgkSJgOIeINt31.jpg"
-                      width="100%"
-                      height="100%"
-                      alt=""
-                    />
-                  </div>
-                  <div class="col-4">
-                    <img
-                      src="images/Farewell-1024x683.jpg"
-                      width="100%"
-                      height="100%"
-                      alt=""
-                    />
-                  </div>
                   <div class="col-4">
                     <img
                       src="images/Award-1.jpg"
@@ -921,32 +1318,6 @@
     </footer>
     <!-- scripts start -->
     <!-- jquery  start-->
-    <script>
-      function startApplication() {
-        document.getElementById("startSection").style.display = "none";
-        document.getElementById("membershipForm").style.display = "block";
-      }
-
-      function nextStep(step) {
-        // Hide all steps
-        document
-          .querySelectorAll(".form-step")
-          .forEach((s) => s.classList.remove("active"));
-        // Show target step
-        document.getElementById("step" + step).classList.add("active");
-      }
-
-      // Optional: On form submit (you can connect this to Formspree, Google Forms, etc.)
-      document
-        .getElementById("membershipForm")
-        .addEventListener("submit", function (e) {
-          e.preventDefault();
-          alert(
-            "Thank you! Your membership application has been submitted successfully. We will contact you soon."
-          );
-          // Here you can add actual form submission via fetch() if needed
-        });
-    </script>
     <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
       crossorigin="anonymous"
@@ -979,203 +1350,37 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="js/general.js"></script>
     <script src="js/nav.js"></script>
-    <script>
-      (function () {
-        $("[data-slider-wrap]").each(function () {
-          var _this = $(this),
-            _slick = _this.find("[data-slider]");
-
-          function typeInit(target, str, destroy) {
-            var typedOptions = {
-                strings: [str],
-                typeSpeed: 30,
-                cursorChar: "",
-              },
-              _typedjs = new Typed(target, typedOptions);
-
-            if (destroy === true) {
-              _typedjs.destroy();
-            }
-          } //typeInit END
-
-          _slick
-            .on("init", function (event, slick) {
-              var _current = _slick.find("[data-slick-index='0']"),
-                _input = _current.find("[data-typed]"),
-                _inputNative = _input[0],
-                _data = _input.data("typed");
-
-              typeInit(_inputNative, _data);
-            })
-            .on("afterChange", function (event, slick, currentSlide) {
-              var _getCurrent = _slick.find(
-                  "[data-slick-index='" + currentSlide + "']"
-                ),
-                _getInput = _getCurrent.find("[data-typed]"),
-                _getInputNative = _getInput[0],
-                _getData = _getInput.data("typed"),
-                _getAll = $("[data-slick-index]"),
-                _getAllInput = _getAll.find("[data-typed]"),
-                _getAllInputNative = _getAllInput[0];
-
-              //destroy
-              typeInit(_getAllInputNative, _getData, true);
-              _getAllInput.html("").next().remove();
-
-              //init
-              typeInit(_getInputNative, _getData);
-            });
-
-          _slick.slick({
-            // fade: true,
-            speed: 800,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            infinite: true,
-            autoplay: true,
-            autoplaySpeed: 8000,
-            arrows: false,
-            dots: false,
-            pauseOnHover: false,
-            pauseOnFocus: false,
-          });
-        });
-      })();
-    </script>
-    <!-- swiper-js  -->
-    <script>
-      var swiper = new Swiper(".testi", {
-        grabCursor: true,
-        loop: true,
-        effect: "creative",
-        speed: 1000,
-        autoplay: {
-          delay: 2500,
-          disableOnInteraction: false,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        creativeEffect: {
-          prev: {
-            shadow: true,
-            origin: "left center",
-            translate: ["-5%", 0, -200],
-            rotate: [0, 100, 0],
-          },
-          next: {
-            origin: "right center",
-            translate: ["5%", 0, -200],
-            rotate: [0, -100, 0],
-          },
-        },
-      });
-
-      // type script
-      var typed = new Typed(".typing2", {
-        strings: ["trust", "believe", "commitment"],
-        typeSpeed: 100,
-        startDelay: 0,
-        backSpeed: 60,
-        backDelay: 500,
-        loop: true,
-        cursorChar: "|",
-        contentType: "html",
-      });
-      // type script end
-    </script>
-    <!-- swiper-js end -->
-    <!-- star js  -->
-    <script>
-      const stars = document.querySelectorAll(".star");
-
-      stars.forEach((star, index) => {
-        star.addEventListener("click", (e) => {
-          let current_star = star.getAttribute("data-index");
-
-          var my_stars = star
-            .closest(".review_rating")
-            .querySelectorAll(".star");
-
-          my_stars.forEach((star_index, i) => {
-            if (current_star >= i + 1) {
-              star_index.innerHTML = "";
-            } else {
-              star_index.innerHTML = "";
-            }
-          });
-        });
-      });
-    </script>
-    <!-- star js end -->
-    <script>
-      $("#shop_carousel").owlCarousel({
-        loop: true,
-        margin: 10,
-        autoplay: true,
-        slideTransition: "linear",
-        autoplayTimeout: 3000,
-        autoplaySpeed: 3000,
-        nav: false,
-        autoplayHoverPause: true,
-        responsive: {
-          0: {
-            items: 2,
-          },
-          600: {
-            items: 3,
-          },
-          1000: {
-            items: 5,
-          },
-          1200: {
-            items: 6,
-          },
-        },
-      });
-    </script>
-    <!-- scripts end -->
-    <script type="text/javascript">
-      $(window).on("load", function () {
-        $("#myModal").modal("show");
-      });
-    </script>
-    <script>
-      $(document).ready(function () {
-        $("#reload").on("click", function (e) {
-          e.preventDefault();
-          $.ajax({
-            url: "captcha-reload",
-            type: "GET",
-            success: function (data) {
-              $(".captcha span").html(data.captcha);
-            },
-          });
-        });
-      });
-    </script>
+    <script src="js/script.js"></script>
+    <script src="js/min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <!-- jquery  start-->
     <script>
-      // Animated "Connectivity" text
-      const word = "Connectivity";
-      const container = document.getElementById("connectivity");
-      word.split("").forEach((letter, i) => {
-        const span = document.createElement("span");
-        span.className = "letter";
-        span.textContent = letter === " " ? "\u00A0" : letter;
-        span.style.animationDelay = `${i * 0.04}s`;
-        container.appendChild(span);
-      });
+      function startApplication() {
+        document.getElementById("startSection").style.display = "none";
+        document.getElementById("membershipForm").style.display = "block";
+      }
 
-      // Clickable Dots → Open Google Maps
-      document.querySelectorAll(".dot").forEach((dot) => {
-        dot.addEventListener("click", () => {
-          const lat = dot.dataset.lat;
-          const lng = dot.dataset.lng;
-          window.open(`https://www.google.com/maps?q=${lat},${lng}`, "_blank");
+      function nextStep(step) {
+        // Hide all steps
+        document
+          .querySelectorAll(".form-step")
+          .forEach((s) => s.classList.remove("active"));
+        // Show target step
+        document.getElementById("step" + step).classList.add("active");
+      }
+
+      // Optional: On form submit (you can connect this to Formspree, Google Forms, etc.)
+      document
+        .getElementById("membershipForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          alert(
+            "Thank you! Your membership application has been submitted successfully. We will contact you soon."
+          );
+          // Here you can add actual form submission via fetch() if needed
         });
-      });
     </script>
+   
   </body>
 </html>
+

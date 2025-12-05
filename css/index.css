@@ -802,7 +802,14 @@ background-color:#b2071d !important ;
   .hero-fixed-wrapper h1{
     font-size: 39px !important;
   }
+  .member-section{
+    margin-top: -85px;
+  }
 }
+
+ .member-section{
+    margin-top: -85px;
+  }
 
 .photo__gallery .gallery__image {
   width: 100%;
